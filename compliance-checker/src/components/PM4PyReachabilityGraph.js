@@ -1,49 +1,87 @@
-// ========== IMPORTS ==========
 import React, { useState, useEffect, useRef } from 'react';
 import { Network, AlertCircle, Loader } from 'lucide-react';
 
-// ========== PM4PY REACHABILITY VISUALIZATION COMPONENT ==========
+/**
+ * Converts a process model object (with places, transitions, arcs) to a valid PNML XML string.
+ */
+const convertToPNML = (processModel) => {
+  const { places, transitions, arcs } = processModel;
+
+  let pnml = `<?xml version="1.0" encoding="UTF-8"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">`;
+
+  // Places
+  places?.forEach(place => {
+    pnml += `
+    <place id="${place.id}">
+      <name><text>${place.name || place.id}</text></name>`;
+    if (place.initialTokens && Number(place.initialTokens) > 0) {
+      pnml += `
+      <initialMarking>
+        <text>${place.initialTokens}</text>
+      </initialMarking>`;
+    }
+    pnml += `
+    </place>`;
+  });
+
+  // Transitions
+  transitions?.forEach(transition => {
+    pnml += `
+    <transition id="${transition.id}">
+      <name><text>${transition.name || transition.id}</text></name>
+    </transition>`;
+  });
+
+  // Arcs
+  arcs?.forEach(arc => {
+    pnml += `
+    <arc id="${arc.id}" source="${arc.source}" target="${arc.target}"/>`;
+  });
+
+  pnml += `
+  </net>
+</pnml>`;
+
+  return pnml;
+};
+
+/**
+ * PM4PyReachabilityVisualization
+ * Props:
+ *   - processModel: object with { places, transitions, arcs }
+ *   - currentMarking: optional, for highlighting states
+ */
 const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
   const [reachabilityData, setReachabilityData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const canvasRef = useRef(null);
 
-  // Function to call PM4Py backend
+  // Sends the process model as PNML (converted to Blob) to Flask backend
   const generateReachabilityGraphWithPM4Py = async (processModel) => {
     setLoading(true);
     setError(null);
-    
+
     try {
-      // Convert your processModel to PNML format for PM4Py
-      const pnmlData = convertToPNML(processModel);
-      
-      // Call your backend endpoint that uses PM4Py (FIXED URL)
+      const pnmlString = convertToPNML(processModel);
+      const pnmlBlob = new Blob([pnmlString], { type: 'application/xml' });
+      const formData = new FormData();
+      formData.append('pnml_file', pnmlBlob, 'model.pnml');
+
       const response = await fetch('http://localhost:5000/api/pm4py/reachability-graph', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          pnml: pnmlData,
-          processModel: processModel
-        })
+        body: formData
       });
 
       if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+        const message = await response.text();
+        throw new Error(`HTTP error! status: ${response.status}. ${message}`);
       }
 
       const data = await response.json();
-      
-      // Expected format from PM4Py backend:
-      // {
-      //   states: [{ id: 'S0', marking: {p1: 1, p2: 0}, isInitial: true, isTerminal: false }],
-      //   transitions: [{ id: 't1', source: 'S0', target: 'S1', label: 'ActivityA' }]
-      // }
-      
       setReachabilityData(data);
-      
     } catch (err) {
       console.error('Error generating reachability graph with PM4Py:', err);
       setError(err.message);
@@ -52,73 +90,19 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
     }
   };
 
-  // Convert processModel to PNML format for PM4Py
-  const convertToPNML = (processModel) => {
-    const { places, transitions, arcs } = processModel;
-    
-    // Create PNML XML structure
-    let pnml = `<?xml version="1.0" encoding="UTF-8"?>
-<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
-  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">`;
-
-    // Add places
-    places?.forEach(place => {
-      pnml += `
-    <place id="${place.id}">
-      <name><text>${place.name || place.id}</text></name>`;
-      
-      if (place.initialTokens > 0) {
-        pnml += `
-      <initialMarking><text>${place.initialTokens}</text></initialMarking>`;
-      }
-      
-      pnml += `
-    </place>`;
-    });
-
-    // Add transitions
-    transitions?.forEach(transition => {
-      pnml += `
-    <transition id="${transition.id}">
-      <name><text>${transition.name || transition.id}</text></name>
-    </transition>`;
-    });
-
-    // Add arcs
-    arcs?.forEach(arc => {
-      pnml += `
-    <arc id="${arc.id}" source="${arc.source}" target="${arc.target}"/>`;
-    });
-
-    pnml += `
-  </net>
-</pnml>`;
-
-    return pnml;
-  };
-
-  // Generate reachability graph when processModel changes
-  useEffect(() => {
-    if (processModel && processModel.places && processModel.transitions) {
-      generateReachabilityGraphWithPM4Py(processModel);
-    }
-  }, [processModel]);
-
   // Draw the reachability graph using Canvas
   const drawReachabilityGraph = () => {
     const canvas = canvasRef.current;
     if (!canvas || !reachabilityData) return;
-    
+
     const ctx = canvas.getContext('2d');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
+
     const { states, transitions } = reachabilityData;
-    
-    // Layout states in a grid
     const cols = Math.ceil(Math.sqrt(states.length));
     const cellWidth = canvas.width / (cols + 1);
     const cellHeight = canvas.height / (Math.ceil(states.length / cols) + 1);
-    
+
     // Position states
     states.forEach((state, index) => {
       const col = index % cols;
@@ -126,21 +110,21 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
       state.x = (col + 1) * cellWidth;
       state.y = (row + 1) * cellHeight;
     });
-    
+
     // Draw transitions (arcs)
     ctx.strokeStyle = '#666';
     ctx.lineWidth = 2;
     transitions.forEach(transition => {
       const source = states.find(s => s.id === transition.source);
       const target = states.find(s => s.id === transition.target);
-      
+
       if (source && target) {
         if (source.id === target.id) {
           // Self-loop
           ctx.beginPath();
           ctx.arc(source.x + 20, source.y - 20, 15, 0, 2 * Math.PI);
           ctx.stroke();
-          
+
           // Arrow for self-loop
           ctx.beginPath();
           ctx.moveTo(source.x + 35, source.y - 20);
@@ -148,7 +132,7 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
           ctx.moveTo(source.x + 35, source.y - 20);
           ctx.lineTo(source.x + 30, source.y - 15);
           ctx.stroke();
-          
+
           // Label
           ctx.font = '10px Arial';
           ctx.fillStyle = '#333';
@@ -159,17 +143,17 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
           const dx = target.x - source.x;
           const dy = target.y - source.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-          
+
           const startX = source.x + (dx / distance) * 25;
           const startY = source.y + (dy / distance) * 25;
           const endX = target.x - (dx / distance) * 25;
           const endY = target.y - (dy / distance) * 25;
-          
+
           ctx.beginPath();
           ctx.moveTo(startX, startY);
           ctx.lineTo(endX, endY);
           ctx.stroke();
-          
+
           // Arrowhead
           const angle = Math.atan2(dy, dx);
           const headlen = 10;
@@ -179,7 +163,7 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
           ctx.moveTo(endX, endY);
           ctx.lineTo(endX - headlen * Math.cos(angle + Math.PI / 6), endY - headlen * Math.sin(angle + Math.PI / 6));
           ctx.stroke();
-          
+
           // Label
           const midX = (startX + endX) / 2;
           const midY = (startY + endY) / 2;
@@ -190,41 +174,40 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
         }
       }
     });
-    
-    // Draw states
+
+    // Draw states (nodes)
     states.forEach(state => {
-      // Check if this is the current state
+      // Get marking key for current state
       const getCurrentMarkingKey = () => {
         if (!currentMarking || typeof currentMarking !== 'object') return '';
         return Object.keys(currentMarking).sort()
           .map(place => `${place}:${currentMarking[place] || 0}`)
           .join(',');
       };
-      
+
       const stateMarkingKey = Object.keys(state.marking || {}).sort()
         .map(place => `${place}:${state.marking[place] || 0}`)
         .join(',');
-      
+
       const isCurrentState = getCurrentMarkingKey() === stateMarkingKey;
-      
-      // Color based on state type
-      ctx.fillStyle = state.isInitial ? '#10B981' : 
-                     state.isTerminal ? '#EF4444' : 
-                     isCurrentState ? '#3B82F6' : '#6B7280';
-      
+
+      ctx.fillStyle = state.isInitial ? '#10B981'
+                      : state.isTerminal ? '#EF4444'
+                      : isCurrentState ? '#3B82F6'
+                      : '#6B7280';
       ctx.strokeStyle = '#374151';
       ctx.lineWidth = 2;
       ctx.beginPath();
       ctx.arc(state.x, state.y, 25, 0, 2 * Math.PI);
       ctx.fill();
       ctx.stroke();
-      
+
       // State ID
       ctx.font = '12px Arial';
       ctx.fillStyle = 'white';
       ctx.textAlign = 'center';
       ctx.fillText(state.id, state.x, state.y + 4);
-      
+
       // Marking below state
       ctx.font = '8px Arial';
       ctx.fillStyle = '#374151';
@@ -232,16 +215,26 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
         .filter(([_, tokens]) => tokens > 0)
         .map(([place, tokens]) => tokens > 1 ? `${place}(${tokens})` : place)
         .join(', ') || '∅';
-      
+
       const displayText = markingText.length > 15 ? markingText.substring(0, 15) + '...' : markingText;
       ctx.fillText(displayText, state.x, state.y + 40);
     });
   };
 
+  // Generate reachability graph when processModel changes
+  useEffect(() => {
+    if (processModel && processModel.places && processModel.transitions) {
+      generateReachabilityGraphWithPM4Py(processModel);
+    }
+    // eslint-disable-next-line
+  }, [processModel]);
+
+  // Draw when data changes
   useEffect(() => {
     if (reachabilityData) {
       drawReachabilityGraph();
     }
+    // eslint-disable-next-line
   }, [reachabilityData, currentMarking]);
 
   // Retry function
@@ -251,6 +244,7 @@ const PM4PyReachabilityVisualization = ({ processModel, currentMarking }) => {
     }
   };
 
+  // UI
   if (loading) {
     return (
       <div className="space-y-6">

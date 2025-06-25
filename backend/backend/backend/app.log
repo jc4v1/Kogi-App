@@ -1,0 +1,524 @@
+2025-06-26 00:35:26,448 - __main__ - INFO - Starting Flask application...
+2025-06-26 00:35:26,595 - werkzeug - WARNING -  * Debugger is active!
+2025-06-26 00:35:26,611 - werkzeug - INFO -  * Debugger PIN: 270-680-350
+2025-06-26 00:41:40,694 - werkzeug - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 00:42:53,725 - INFO - Starting Flask server on port 5000...
+2025-06-26 00:42:53,906 - WARNING -  * Debugger is active!
+2025-06-26 00:42:53,941 - INFO -  * Debugger PIN: 270-680-350
+2025-06-26 00:44:30,013 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,da;q=0.8,en-GB;q=0.7,es-CO;q=0.6,es;q=0.5
+
+
+2025-06-26 00:44:30,015 - DEBUG - Request body: b''
+2025-06-26 00:44:30,015 - DEBUG - Response: b''
+2025-06-26 00:44:30,015 - INFO - 127.0.0.1 - - [26/Jun/2025 00:44:30] "OPTIONS /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 00:44:30,280 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 6003
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0
+Sec-Ch-Ua: "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,da;q=0.8,en-GB;q=0.7,es-CO;q=0.6,es;q=0.5
+
+
+2025-06-26 00:44:30,281 - DEBUG - Request body: b'{"pnml":"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<pnml xmlns=\\"http://www.pnml.org/version-2009/grammar/pnml\\">\\n  <net id=\\"net1\\" type=\\"http://www.pnml.org/version-2009/grammar/ptnet\\">\\n    <place id=\\"sink\\">\\n      <name><text>sink</text></name>\\n    </place>\\n    <place id=\\"source\\">\\n      <name><text>source</text></name>\\n      <initialMarking><text>1</text></initialMarking>\\n    </place>\\n    <place id=\\"p_2\\">\\n      <name><text>p_2</text></name>\\n    </place>\\n    <place id=\\"p_4\\">\\n      <name><text>p_4</text></name>\\n    </place>\\n    <place id=\\"p_1\\">\\n      <name><text>p_1</text></name>\\n    </place>\\n    <place id=\\"p_3\\">\\n      <name><text>p_3</text></name>\\n    </place>\\n    <place id=\\"p_5\\">\\n      <name><text>p_5</text></name>\\n    </place>\\n    <place id=\\"p_6\\">\\n      <name><text>p_6</text></name>\\n    </place>\\n    <place id=\\"p_7\\">\\n      <name><text>p_7</text></name>\\n    </place>\\n    <place id=\\"p_8\\">\\n      <name><text>p_8</text></name>\\n    </place>\\n    <place id=\\"p_9\\">\\n      <name><text>p_9</text></name>\\n    </place>\\n    <transition id=\\"t_1\\">\\n      <name><text>t_1</text></name>\\n    </transition>\\n    <transition id=\\"t_4\\">\\n      <name><text>t_4</text></name>\\n    </transition>\\n    <transition id=\\"t_5\\">\\n      <name><text>C</text></name>\\n    </transition>\\n    <transition id=\\"t_2\\">\\n      <name><text>A</text></name>\\n    </transition>\\n    <transition id=\\"t_3\\">\\n      <name><text>B</text></name>\\n    </transition>\\n    <transition id=\\"t_6\\">\\n      <name><text>D</text></name>\\n    </transition>\\n    <transition id=\\"t_7\\">\\n      <name><text>t_7</text></name>\\n    </transition>\\n    <transition id=\\"t_8\\">\\n      <name><text>E</text></name>\\n    </transition>\\n    <transition id=\\"t_9\\">\\n      <name><text>t_9</text></name>\\n    </transition>\\n    <transition id=\\"t_10\\">\\n      <name><text>F</text></name>\\n    </transition>\\n    <transition id=\\"t_11\\">\\n      <name><text>G</text></name>\\n    </transition>\\n    <arc id=\\"138335141286416\\" source=\\"p_7\\" target=\\"t_8\\"/>\\n    <arc id=\\"138335141286160\\" source=\\"p_6\\" target=\\"t_7\\"/>\\n    <arc id=\\"138335141286544\\" source=\\"p_8\\" target=\\"t_9\\"/>\\n    <arc id=\\"138335141285648\\" source=\\"p_5\\" target=\\"t_5\\"/>\\n    <arc id=\\"138335141286672\\" source=\\"p_8\\" target=\\"t_10\\"/>\\n    <arc id=\\"138335141285776\\" source=\\"p_5\\" target=\\"t_6\\"/>\\n    <arc id=\\"138335141284624\\" source=\\"t_1\\" target=\\"p_2\\"/>\\n    <arc id=\\"138335141284752\\" source=\\"p_1\\" target=\\"t_2\\"/>\\n    <arc id=\\"138335141284496\\" source=\\"t_1\\" target=\\"p_1\\"/>\\n    <arc id=\\"138335141284880\\" source=\\"t_2\\" target=\\"p_3\\"/>\\n    <arc id=\\"138335141285008\\" source=\\"p_3\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285136\\" source=\\"p_4\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285264\\" source=\\"p_2\\" target=\\"t_3\\"/>\\n    <arc id=\\"138335141285392\\" source=\\"t_3\\" target=\\"p_4\\"/>\\n    <arc id=\\"138335141285520\\" source=\\"t_4\\" target=\\"p_5\\"/>\\n    <arc id=\\"138335141284304\\" source=\\"source\\" target=\\"t_1\\"/>\\n    <arc id=\\"138335141285904\\" source=\\"t_5\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286032\\" source=\\"t_6\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286288\\" source=\\"t_7\\" target=\\"p_7\\"/>\\n    <arc id=\\"138335141286800\\" source=\\"t_8\\" target=\\"p_8\\"/>\\n    <arc id=\\"138335141286928\\" source=\\"t_10\\" target=\\"p_9\\"/>\\n    <arc id=\\"138335141287056\\" source=\\"p_9\\" target=\\"t_11\\"/>\\n    <arc id=\\"138335141287184\\" source=\\"t_9\\" target=\\"sink\\"/>\\n    <arc id=\\"138335141287312\\" source=\\"t_11\\" target=\\"p_7\\"/>\\n  </net>\\n</pnml>","processModel":{"places":[{"id":"sink","name":"sink","initialTokens":0},{"id":"source","name":"source","initialTokens":1},{"id":"p_2","name":"p_2","initialTokens":0},{"id":"p_4","name":"p_4","initialTokens":0},{"id":"p_1","name":"p_1","initialTokens":0},{"id":"p_3","name":"p_3","initialTokens":0},{"id":"p_5","name":"p_5","initialTokens":0},{"id":"p_6","name":"p_6","initialTokens":0},{"id":"p_7","name":"p_7","initialTokens":0},{"id":"p_8","name":"p_8","initialTokens":0},{"id":"p_9","name":"p_9","initialTokens":0}],"transitions":[{"id":"t_1","name":"t_1"},{"id":"t_4","name":"t_4"},{"id":"t_5","name":"C"},{"id":"t_2","name":"A"},{"id":"t_3","name":"B"},{"id":"t_6","name":"D"},{"id":"t_7","name":"t_7"},{"id":"t_8","name":"E"},{"id":"t_9","name":"t_9"},{"id":"t_10","name":"F"},{"id":"t_11","name":"G"}],"arcs":[{"id":"138335141286416","source":"p_7","target":"t_8","weight":1},{"id":"138335141286160","source":"p_6","target":"t_7","weight":1},{"id":"138335141286544","source":"p_8","target":"t_9","weight":1},{"id":"138335141285648","source":"p_5","target":"t_5","weight":1},{"id":"138335141286672","source":"p_8","target":"t_10","weight":1},{"id":"138335141285776","source":"p_5","target":"t_6","weight":1},{"id":"138335141284624","source":"t_1","target":"p_2","weight":1},{"id":"138335141284752","source":"p_1","target":"t_2","weight":1},{"id":"138335141284496","source":"t_1","target":"p_1","weight":1},{"id":"138335141284880","source":"t_2","target":"p_3","weight":1},{"id":"138335141285008","source":"p_3","target":"t_4","weight":1},{"id":"138335141285136","source":"p_4","target":"t_4","weight":1},{"id":"138335141285264","source":"p_2","target":"t_3","weight":1},{"id":"138335141285392","source":"t_3","target":"p_4","weight":1},{"id":"138335141285520","source":"t_4","target":"p_5","weight":1},{"id":"138335141284304","source":"source","target":"t_1","weight":1},{"id":"138335141285904","source":"t_5","target":"p_6","weight":1},{"id":"138335141286032","source":"t_6","target":"p_6","weight":1},{"id":"138335141286288","source":"t_7","target":"p_7","weight":1},{"id":"138335141286800","source":"t_8","target":"p_8","weight":1},{"id":"138335141286928","source":"t_10","target":"p_9","weight":1},{"id":"138335141287056","source":"p_9","target":"t_11","weight":1},{"id":"138335141287184","source":"t_9","target":"sink","weight":1},{"id":"138335141287312","source":"t_11","target":"p_7","weight":1}]}}'
+2025-06-26 00:44:30,283 - INFO - [2025-06-25 22:44:30] /api/pm4py/reachability-graph called.
+2025-06-26 00:44:30,313 - WARNING - No 'pnml_file' found in request.files.
+2025-06-26 00:44:30,314 - DEBUG - Response: b'{\n  "error": "PNML file is required. Please upload as \'pnml_file\'."\n}\n'
+2025-06-26 00:44:30,316 - INFO - 127.0.0.1 - - [26/Jun/2025 00:44:30] "[31m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 400 -
+2025-06-26 00:58:12,019 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 00:58:12,022 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 00:58:12,022 - DEBUG - Request body: b''
+2025-06-26 00:58:12,023 - DEBUG - Request body: b''
+2025-06-26 00:58:12,024 - DEBUG - Response: b''
+2025-06-26 00:58:12,025 - DEBUG - Response: b''
+2025-06-26 00:58:12,030 - INFO - 127.0.0.1 - - [26/Jun/2025 00:58:12] "OPTIONS /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 00:58:12,033 - INFO - 127.0.0.1 - - [26/Jun/2025 00:58:12] "OPTIONS /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 00:58:12,285 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 6003
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 00:58:12,286 - DEBUG - Request body: b'{"pnml":"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<pnml xmlns=\\"http://www.pnml.org/version-2009/grammar/pnml\\">\\n  <net id=\\"net1\\" type=\\"http://www.pnml.org/version-2009/grammar/ptnet\\">\\n    <place id=\\"sink\\">\\n      <name><text>sink</text></name>\\n    </place>\\n    <place id=\\"source\\">\\n      <name><text>source</text></name>\\n      <initialMarking><text>1</text></initialMarking>\\n    </place>\\n    <place id=\\"p_2\\">\\n      <name><text>p_2</text></name>\\n    </place>\\n    <place id=\\"p_4\\">\\n      <name><text>p_4</text></name>\\n    </place>\\n    <place id=\\"p_1\\">\\n      <name><text>p_1</text></name>\\n    </place>\\n    <place id=\\"p_3\\">\\n      <name><text>p_3</text></name>\\n    </place>\\n    <place id=\\"p_5\\">\\n      <name><text>p_5</text></name>\\n    </place>\\n    <place id=\\"p_6\\">\\n      <name><text>p_6</text></name>\\n    </place>\\n    <place id=\\"p_7\\">\\n      <name><text>p_7</text></name>\\n    </place>\\n    <place id=\\"p_8\\">\\n      <name><text>p_8</text></name>\\n    </place>\\n    <place id=\\"p_9\\">\\n      <name><text>p_9</text></name>\\n    </place>\\n    <transition id=\\"t_1\\">\\n      <name><text>t_1</text></name>\\n    </transition>\\n    <transition id=\\"t_4\\">\\n      <name><text>t_4</text></name>\\n    </transition>\\n    <transition id=\\"t_5\\">\\n      <name><text>C</text></name>\\n    </transition>\\n    <transition id=\\"t_2\\">\\n      <name><text>A</text></name>\\n    </transition>\\n    <transition id=\\"t_3\\">\\n      <name><text>B</text></name>\\n    </transition>\\n    <transition id=\\"t_6\\">\\n      <name><text>D</text></name>\\n    </transition>\\n    <transition id=\\"t_7\\">\\n      <name><text>t_7</text></name>\\n    </transition>\\n    <transition id=\\"t_8\\">\\n      <name><text>E</text></name>\\n    </transition>\\n    <transition id=\\"t_9\\">\\n      <name><text>t_9</text></name>\\n    </transition>\\n    <transition id=\\"t_10\\">\\n      <name><text>F</text></name>\\n    </transition>\\n    <transition id=\\"t_11\\">\\n      <name><text>G</text></name>\\n    </transition>\\n    <arc id=\\"138335141286416\\" source=\\"p_7\\" target=\\"t_8\\"/>\\n    <arc id=\\"138335141286160\\" source=\\"p_6\\" target=\\"t_7\\"/>\\n    <arc id=\\"138335141286544\\" source=\\"p_8\\" target=\\"t_9\\"/>\\n    <arc id=\\"138335141285648\\" source=\\"p_5\\" target=\\"t_5\\"/>\\n    <arc id=\\"138335141286672\\" source=\\"p_8\\" target=\\"t_10\\"/>\\n    <arc id=\\"138335141285776\\" source=\\"p_5\\" target=\\"t_6\\"/>\\n    <arc id=\\"138335141284624\\" source=\\"t_1\\" target=\\"p_2\\"/>\\n    <arc id=\\"138335141284752\\" source=\\"p_1\\" target=\\"t_2\\"/>\\n    <arc id=\\"138335141284496\\" source=\\"t_1\\" target=\\"p_1\\"/>\\n    <arc id=\\"138335141284880\\" source=\\"t_2\\" target=\\"p_3\\"/>\\n    <arc id=\\"138335141285008\\" source=\\"p_3\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285136\\" source=\\"p_4\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285264\\" source=\\"p_2\\" target=\\"t_3\\"/>\\n    <arc id=\\"138335141285392\\" source=\\"t_3\\" target=\\"p_4\\"/>\\n    <arc id=\\"138335141285520\\" source=\\"t_4\\" target=\\"p_5\\"/>\\n    <arc id=\\"138335141284304\\" source=\\"source\\" target=\\"t_1\\"/>\\n    <arc id=\\"138335141285904\\" source=\\"t_5\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286032\\" source=\\"t_6\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286288\\" source=\\"t_7\\" target=\\"p_7\\"/>\\n    <arc id=\\"138335141286800\\" source=\\"t_8\\" target=\\"p_8\\"/>\\n    <arc id=\\"138335141286928\\" source=\\"t_10\\" target=\\"p_9\\"/>\\n    <arc id=\\"138335141287056\\" source=\\"p_9\\" target=\\"t_11\\"/>\\n    <arc id=\\"138335141287184\\" source=\\"t_9\\" target=\\"sink\\"/>\\n    <arc id=\\"138335141287312\\" source=\\"t_11\\" target=\\"p_7\\"/>\\n  </net>\\n</pnml>","processModel":{"places":[{"id":"sink","name":"sink","initialTokens":0},{"id":"source","name":"source","initialTokens":1},{"id":"p_2","name":"p_2","initialTokens":0},{"id":"p_4","name":"p_4","initialTokens":0},{"id":"p_1","name":"p_1","initialTokens":0},{"id":"p_3","name":"p_3","initialTokens":0},{"id":"p_5","name":"p_5","initialTokens":0},{"id":"p_6","name":"p_6","initialTokens":0},{"id":"p_7","name":"p_7","initialTokens":0},{"id":"p_8","name":"p_8","initialTokens":0},{"id":"p_9","name":"p_9","initialTokens":0}],"transitions":[{"id":"t_1","name":"t_1"},{"id":"t_4","name":"t_4"},{"id":"t_5","name":"C"},{"id":"t_2","name":"A"},{"id":"t_3","name":"B"},{"id":"t_6","name":"D"},{"id":"t_7","name":"t_7"},{"id":"t_8","name":"E"},{"id":"t_9","name":"t_9"},{"id":"t_10","name":"F"},{"id":"t_11","name":"G"}],"arcs":[{"id":"138335141286416","source":"p_7","target":"t_8","weight":1},{"id":"138335141286160","source":"p_6","target":"t_7","weight":1},{"id":"138335141286544","source":"p_8","target":"t_9","weight":1},{"id":"138335141285648","source":"p_5","target":"t_5","weight":1},{"id":"138335141286672","source":"p_8","target":"t_10","weight":1},{"id":"138335141285776","source":"p_5","target":"t_6","weight":1},{"id":"138335141284624","source":"t_1","target":"p_2","weight":1},{"id":"138335141284752","source":"p_1","target":"t_2","weight":1},{"id":"138335141284496","source":"t_1","target":"p_1","weight":1},{"id":"138335141284880","source":"t_2","target":"p_3","weight":1},{"id":"138335141285008","source":"p_3","target":"t_4","weight":1},{"id":"138335141285136","source":"p_4","target":"t_4","weight":1},{"id":"138335141285264","source":"p_2","target":"t_3","weight":1},{"id":"138335141285392","source":"t_3","target":"p_4","weight":1},{"id":"138335141285520","source":"t_4","target":"p_5","weight":1},{"id":"138335141284304","source":"source","target":"t_1","weight":1},{"id":"138335141285904","source":"t_5","target":"p_6","weight":1},{"id":"138335141286032","source":"t_6","target":"p_6","weight":1},{"id":"138335141286288","source":"t_7","target":"p_7","weight":1},{"id":"138335141286800","source":"t_8","target":"p_8","weight":1},{"id":"138335141286928","source":"t_10","target":"p_9","weight":1},{"id":"138335141287056","source":"p_9","target":"t_11","weight":1},{"id":"138335141287184","source":"t_9","target":"sink","weight":1},{"id":"138335141287312","source":"t_11","target":"p_7","weight":1}]}}'
+2025-06-26 00:58:12,288 - INFO - [2025-06-25 22:58:12] /api/pm4py/reachability-graph called.
+2025-06-26 00:58:12,289 - WARNING - No 'pnml_file' found in request.files.
+2025-06-26 00:58:12,289 - DEBUG - Response: b'{\n  "error": "PNML file is required. Please upload as \'pnml_file\'."\n}\n'
+2025-06-26 00:58:12,291 - INFO - 127.0.0.1 - - [26/Jun/2025 00:58:12] "[31m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 400 -
+2025-06-26 00:58:12,347 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 6003
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 00:58:12,349 - DEBUG - Request body: b'{"pnml":"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<pnml xmlns=\\"http://www.pnml.org/version-2009/grammar/pnml\\">\\n  <net id=\\"net1\\" type=\\"http://www.pnml.org/version-2009/grammar/ptnet\\">\\n    <place id=\\"sink\\">\\n      <name><text>sink</text></name>\\n    </place>\\n    <place id=\\"source\\">\\n      <name><text>source</text></name>\\n      <initialMarking><text>1</text></initialMarking>\\n    </place>\\n    <place id=\\"p_2\\">\\n      <name><text>p_2</text></name>\\n    </place>\\n    <place id=\\"p_4\\">\\n      <name><text>p_4</text></name>\\n    </place>\\n    <place id=\\"p_1\\">\\n      <name><text>p_1</text></name>\\n    </place>\\n    <place id=\\"p_3\\">\\n      <name><text>p_3</text></name>\\n    </place>\\n    <place id=\\"p_5\\">\\n      <name><text>p_5</text></name>\\n    </place>\\n    <place id=\\"p_6\\">\\n      <name><text>p_6</text></name>\\n    </place>\\n    <place id=\\"p_7\\">\\n      <name><text>p_7</text></name>\\n    </place>\\n    <place id=\\"p_8\\">\\n      <name><text>p_8</text></name>\\n    </place>\\n    <place id=\\"p_9\\">\\n      <name><text>p_9</text></name>\\n    </place>\\n    <transition id=\\"t_1\\">\\n      <name><text>t_1</text></name>\\n    </transition>\\n    <transition id=\\"t_4\\">\\n      <name><text>t_4</text></name>\\n    </transition>\\n    <transition id=\\"t_5\\">\\n      <name><text>C</text></name>\\n    </transition>\\n    <transition id=\\"t_2\\">\\n      <name><text>A</text></name>\\n    </transition>\\n    <transition id=\\"t_3\\">\\n      <name><text>B</text></name>\\n    </transition>\\n    <transition id=\\"t_6\\">\\n      <name><text>D</text></name>\\n    </transition>\\n    <transition id=\\"t_7\\">\\n      <name><text>t_7</text></name>\\n    </transition>\\n    <transition id=\\"t_8\\">\\n      <name><text>E</text></name>\\n    </transition>\\n    <transition id=\\"t_9\\">\\n      <name><text>t_9</text></name>\\n    </transition>\\n    <transition id=\\"t_10\\">\\n      <name><text>F</text></name>\\n    </transition>\\n    <transition id=\\"t_11\\">\\n      <name><text>G</text></name>\\n    </transition>\\n    <arc id=\\"138335141286416\\" source=\\"p_7\\" target=\\"t_8\\"/>\\n    <arc id=\\"138335141286160\\" source=\\"p_6\\" target=\\"t_7\\"/>\\n    <arc id=\\"138335141286544\\" source=\\"p_8\\" target=\\"t_9\\"/>\\n    <arc id=\\"138335141285648\\" source=\\"p_5\\" target=\\"t_5\\"/>\\n    <arc id=\\"138335141286672\\" source=\\"p_8\\" target=\\"t_10\\"/>\\n    <arc id=\\"138335141285776\\" source=\\"p_5\\" target=\\"t_6\\"/>\\n    <arc id=\\"138335141284624\\" source=\\"t_1\\" target=\\"p_2\\"/>\\n    <arc id=\\"138335141284752\\" source=\\"p_1\\" target=\\"t_2\\"/>\\n    <arc id=\\"138335141284496\\" source=\\"t_1\\" target=\\"p_1\\"/>\\n    <arc id=\\"138335141284880\\" source=\\"t_2\\" target=\\"p_3\\"/>\\n    <arc id=\\"138335141285008\\" source=\\"p_3\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285136\\" source=\\"p_4\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285264\\" source=\\"p_2\\" target=\\"t_3\\"/>\\n    <arc id=\\"138335141285392\\" source=\\"t_3\\" target=\\"p_4\\"/>\\n    <arc id=\\"138335141285520\\" source=\\"t_4\\" target=\\"p_5\\"/>\\n    <arc id=\\"138335141284304\\" source=\\"source\\" target=\\"t_1\\"/>\\n    <arc id=\\"138335141285904\\" source=\\"t_5\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286032\\" source=\\"t_6\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286288\\" source=\\"t_7\\" target=\\"p_7\\"/>\\n    <arc id=\\"138335141286800\\" source=\\"t_8\\" target=\\"p_8\\"/>\\n    <arc id=\\"138335141286928\\" source=\\"t_10\\" target=\\"p_9\\"/>\\n    <arc id=\\"138335141287056\\" source=\\"p_9\\" target=\\"t_11\\"/>\\n    <arc id=\\"138335141287184\\" source=\\"t_9\\" target=\\"sink\\"/>\\n    <arc id=\\"138335141287312\\" source=\\"t_11\\" target=\\"p_7\\"/>\\n  </net>\\n</pnml>","processModel":{"places":[{"id":"sink","name":"sink","initialTokens":0},{"id":"source","name":"source","initialTokens":1},{"id":"p_2","name":"p_2","initialTokens":0},{"id":"p_4","name":"p_4","initialTokens":0},{"id":"p_1","name":"p_1","initialTokens":0},{"id":"p_3","name":"p_3","initialTokens":0},{"id":"p_5","name":"p_5","initialTokens":0},{"id":"p_6","name":"p_6","initialTokens":0},{"id":"p_7","name":"p_7","initialTokens":0},{"id":"p_8","name":"p_8","initialTokens":0},{"id":"p_9","name":"p_9","initialTokens":0}],"transitions":[{"id":"t_1","name":"t_1"},{"id":"t_4","name":"t_4"},{"id":"t_5","name":"C"},{"id":"t_2","name":"A"},{"id":"t_3","name":"B"},{"id":"t_6","name":"D"},{"id":"t_7","name":"t_7"},{"id":"t_8","name":"E"},{"id":"t_9","name":"t_9"},{"id":"t_10","name":"F"},{"id":"t_11","name":"G"}],"arcs":[{"id":"138335141286416","source":"p_7","target":"t_8","weight":1},{"id":"138335141286160","source":"p_6","target":"t_7","weight":1},{"id":"138335141286544","source":"p_8","target":"t_9","weight":1},{"id":"138335141285648","source":"p_5","target":"t_5","weight":1},{"id":"138335141286672","source":"p_8","target":"t_10","weight":1},{"id":"138335141285776","source":"p_5","target":"t_6","weight":1},{"id":"138335141284624","source":"t_1","target":"p_2","weight":1},{"id":"138335141284752","source":"p_1","target":"t_2","weight":1},{"id":"138335141284496","source":"t_1","target":"p_1","weight":1},{"id":"138335141284880","source":"t_2","target":"p_3","weight":1},{"id":"138335141285008","source":"p_3","target":"t_4","weight":1},{"id":"138335141285136","source":"p_4","target":"t_4","weight":1},{"id":"138335141285264","source":"p_2","target":"t_3","weight":1},{"id":"138335141285392","source":"t_3","target":"p_4","weight":1},{"id":"138335141285520","source":"t_4","target":"p_5","weight":1},{"id":"138335141284304","source":"source","target":"t_1","weight":1},{"id":"138335141285904","source":"t_5","target":"p_6","weight":1},{"id":"138335141286032","source":"t_6","target":"p_6","weight":1},{"id":"138335141286288","source":"t_7","target":"p_7","weight":1},{"id":"138335141286800","source":"t_8","target":"p_8","weight":1},{"id":"138335141286928","source":"t_10","target":"p_9","weight":1},{"id":"138335141287056","source":"p_9","target":"t_11","weight":1},{"id":"138335141287184","source":"t_9","target":"sink","weight":1},{"id":"138335141287312","source":"t_11","target":"p_7","weight":1}]}}'
+2025-06-26 00:58:12,351 - INFO - [2025-06-25 22:58:12] /api/pm4py/reachability-graph called.
+2025-06-26 00:58:12,352 - WARNING - No 'pnml_file' found in request.files.
+2025-06-26 00:58:12,353 - DEBUG - Response: b'{\n  "error": "PNML file is required. Please upload as \'pnml_file\'."\n}\n'
+2025-06-26 00:58:12,354 - INFO - 127.0.0.1 - - [26/Jun/2025 00:58:12] "[31m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 400 -
+2025-06-26 00:58:20,759 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: content-type
+Origin: http://localhost:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 00:58:20,762 - DEBUG - Request body: b''
+2025-06-26 00:58:20,764 - DEBUG - Response: b''
+2025-06-26 00:58:20,765 - INFO - 127.0.0.1 - - [26/Jun/2025 00:58:20] "OPTIONS /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 00:58:21,084 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 6003
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 00:58:21,086 - DEBUG - Request body: b'{"pnml":"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\\n<pnml xmlns=\\"http://www.pnml.org/version-2009/grammar/pnml\\">\\n  <net id=\\"net1\\" type=\\"http://www.pnml.org/version-2009/grammar/ptnet\\">\\n    <place id=\\"sink\\">\\n      <name><text>sink</text></name>\\n    </place>\\n    <place id=\\"source\\">\\n      <name><text>source</text></name>\\n      <initialMarking><text>1</text></initialMarking>\\n    </place>\\n    <place id=\\"p_2\\">\\n      <name><text>p_2</text></name>\\n    </place>\\n    <place id=\\"p_4\\">\\n      <name><text>p_4</text></name>\\n    </place>\\n    <place id=\\"p_1\\">\\n      <name><text>p_1</text></name>\\n    </place>\\n    <place id=\\"p_3\\">\\n      <name><text>p_3</text></name>\\n    </place>\\n    <place id=\\"p_5\\">\\n      <name><text>p_5</text></name>\\n    </place>\\n    <place id=\\"p_6\\">\\n      <name><text>p_6</text></name>\\n    </place>\\n    <place id=\\"p_7\\">\\n      <name><text>p_7</text></name>\\n    </place>\\n    <place id=\\"p_8\\">\\n      <name><text>p_8</text></name>\\n    </place>\\n    <place id=\\"p_9\\">\\n      <name><text>p_9</text></name>\\n    </place>\\n    <transition id=\\"t_1\\">\\n      <name><text>t_1</text></name>\\n    </transition>\\n    <transition id=\\"t_4\\">\\n      <name><text>t_4</text></name>\\n    </transition>\\n    <transition id=\\"t_5\\">\\n      <name><text>C</text></name>\\n    </transition>\\n    <transition id=\\"t_2\\">\\n      <name><text>A</text></name>\\n    </transition>\\n    <transition id=\\"t_3\\">\\n      <name><text>B</text></name>\\n    </transition>\\n    <transition id=\\"t_6\\">\\n      <name><text>D</text></name>\\n    </transition>\\n    <transition id=\\"t_7\\">\\n      <name><text>t_7</text></name>\\n    </transition>\\n    <transition id=\\"t_8\\">\\n      <name><text>E</text></name>\\n    </transition>\\n    <transition id=\\"t_9\\">\\n      <name><text>t_9</text></name>\\n    </transition>\\n    <transition id=\\"t_10\\">\\n      <name><text>F</text></name>\\n    </transition>\\n    <transition id=\\"t_11\\">\\n      <name><text>G</text></name>\\n    </transition>\\n    <arc id=\\"138335141286416\\" source=\\"p_7\\" target=\\"t_8\\"/>\\n    <arc id=\\"138335141286160\\" source=\\"p_6\\" target=\\"t_7\\"/>\\n    <arc id=\\"138335141286544\\" source=\\"p_8\\" target=\\"t_9\\"/>\\n    <arc id=\\"138335141285648\\" source=\\"p_5\\" target=\\"t_5\\"/>\\n    <arc id=\\"138335141286672\\" source=\\"p_8\\" target=\\"t_10\\"/>\\n    <arc id=\\"138335141285776\\" source=\\"p_5\\" target=\\"t_6\\"/>\\n    <arc id=\\"138335141284624\\" source=\\"t_1\\" target=\\"p_2\\"/>\\n    <arc id=\\"138335141284752\\" source=\\"p_1\\" target=\\"t_2\\"/>\\n    <arc id=\\"138335141284496\\" source=\\"t_1\\" target=\\"p_1\\"/>\\n    <arc id=\\"138335141284880\\" source=\\"t_2\\" target=\\"p_3\\"/>\\n    <arc id=\\"138335141285008\\" source=\\"p_3\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285136\\" source=\\"p_4\\" target=\\"t_4\\"/>\\n    <arc id=\\"138335141285264\\" source=\\"p_2\\" target=\\"t_3\\"/>\\n    <arc id=\\"138335141285392\\" source=\\"t_3\\" target=\\"p_4\\"/>\\n    <arc id=\\"138335141285520\\" source=\\"t_4\\" target=\\"p_5\\"/>\\n    <arc id=\\"138335141284304\\" source=\\"source\\" target=\\"t_1\\"/>\\n    <arc id=\\"138335141285904\\" source=\\"t_5\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286032\\" source=\\"t_6\\" target=\\"p_6\\"/>\\n    <arc id=\\"138335141286288\\" source=\\"t_7\\" target=\\"p_7\\"/>\\n    <arc id=\\"138335141286800\\" source=\\"t_8\\" target=\\"p_8\\"/>\\n    <arc id=\\"138335141286928\\" source=\\"t_10\\" target=\\"p_9\\"/>\\n    <arc id=\\"138335141287056\\" source=\\"p_9\\" target=\\"t_11\\"/>\\n    <arc id=\\"138335141287184\\" source=\\"t_9\\" target=\\"sink\\"/>\\n    <arc id=\\"138335141287312\\" source=\\"t_11\\" target=\\"p_7\\"/>\\n  </net>\\n</pnml>","processModel":{"places":[{"id":"sink","name":"sink","initialTokens":0},{"id":"source","name":"source","initialTokens":1},{"id":"p_2","name":"p_2","initialTokens":0},{"id":"p_4","name":"p_4","initialTokens":0},{"id":"p_1","name":"p_1","initialTokens":0},{"id":"p_3","name":"p_3","initialTokens":0},{"id":"p_5","name":"p_5","initialTokens":0},{"id":"p_6","name":"p_6","initialTokens":0},{"id":"p_7","name":"p_7","initialTokens":0},{"id":"p_8","name":"p_8","initialTokens":0},{"id":"p_9","name":"p_9","initialTokens":0}],"transitions":[{"id":"t_1","name":"t_1"},{"id":"t_4","name":"t_4"},{"id":"t_5","name":"C"},{"id":"t_2","name":"A"},{"id":"t_3","name":"B"},{"id":"t_6","name":"D"},{"id":"t_7","name":"t_7"},{"id":"t_8","name":"E"},{"id":"t_9","name":"t_9"},{"id":"t_10","name":"F"},{"id":"t_11","name":"G"}],"arcs":[{"id":"138335141286416","source":"p_7","target":"t_8","weight":1},{"id":"138335141286160","source":"p_6","target":"t_7","weight":1},{"id":"138335141286544","source":"p_8","target":"t_9","weight":1},{"id":"138335141285648","source":"p_5","target":"t_5","weight":1},{"id":"138335141286672","source":"p_8","target":"t_10","weight":1},{"id":"138335141285776","source":"p_5","target":"t_6","weight":1},{"id":"138335141284624","source":"t_1","target":"p_2","weight":1},{"id":"138335141284752","source":"p_1","target":"t_2","weight":1},{"id":"138335141284496","source":"t_1","target":"p_1","weight":1},{"id":"138335141284880","source":"t_2","target":"p_3","weight":1},{"id":"138335141285008","source":"p_3","target":"t_4","weight":1},{"id":"138335141285136","source":"p_4","target":"t_4","weight":1},{"id":"138335141285264","source":"p_2","target":"t_3","weight":1},{"id":"138335141285392","source":"t_3","target":"p_4","weight":1},{"id":"138335141285520","source":"t_4","target":"p_5","weight":1},{"id":"138335141284304","source":"source","target":"t_1","weight":1},{"id":"138335141285904","source":"t_5","target":"p_6","weight":1},{"id":"138335141286032","source":"t_6","target":"p_6","weight":1},{"id":"138335141286288","source":"t_7","target":"p_7","weight":1},{"id":"138335141286800","source":"t_8","target":"p_8","weight":1},{"id":"138335141286928","source":"t_10","target":"p_9","weight":1},{"id":"138335141287056","source":"p_9","target":"t_11","weight":1},{"id":"138335141287184","source":"t_9","target":"sink","weight":1},{"id":"138335141287312","source":"t_11","target":"p_7","weight":1}]}}'
+2025-06-26 00:58:21,087 - INFO - [2025-06-25 22:58:21] /api/pm4py/reachability-graph called.
+2025-06-26 00:58:21,088 - WARNING - No 'pnml_file' found in request.files.
+2025-06-26 00:58:21,089 - DEBUG - Response: b'{\n  "error": "PNML file is required. Please upload as \'pnml_file\'."\n}\n'
+2025-06-26 00:58:21,089 - INFO - 127.0.0.1 - - [26/Jun/2025 00:58:21] "[31m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 400 -
+2025-06-26 01:03:32,496 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryAz5IP1V5ue2YSZ3u
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:03:32,497 - DEBUG - Request body: b'------WebKitFormBoundaryAz5IP1V5ue2YSZ3u\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundaryAz5IP1V5ue2YSZ3u--\r\n'
+2025-06-26 01:03:32,499 - INFO - [2025-06-25 23:03:32] /api/pm4py/reachability-graph called.
+2025-06-26 01:03:32,503 - INFO - Received PNML file: model.pnml
+2025-06-26 01:03:32,509 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp202e4ni1.pnml
+2025-06-26 01:03:32,510 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:03:32,549 - INFO - Petri net imported successfully.
+2025-06-26 01:03:32,550 - DEBUG - Constructing reachability graph...
+2025-06-26 01:03:32,552 - INFO - Reachability graph constructed.
+2025-06-26 01:03:32,553 - ERROR - Error: 'State' object has no attribute 'marking'
+2025-06-26 01:03:32,594 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 68, in generate_reachability_graph
+    marking_dict[place.name] = state.marking.get(place, 0)
+                               ^^^^^^^^^^^^^
+AttributeError: 'State' object has no attribute 'marking'
+
+2025-06-26 01:03:32,598 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp202e4ni1.pnml deleted.
+2025-06-26 01:03:32,598 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: \'State\' object has no attribute \'marking\'"\n}\n'
+2025-06-26 01:03:32,600 - INFO - 127.0.0.1 - - [26/Jun/2025 01:03:32] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:05:59,205 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 01:07:18,753 - INFO - Starting Flask server on port 5000...
+2025-06-26 01:07:18,951 - WARNING -  * Debugger is active!
+2025-06-26 01:07:18,964 - INFO -  * Debugger PIN: 270-680-350
+2025-06-26 01:07:19,192 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarySVXtFUdf4EjKf7xe
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,192 - DEBUG - Request body: b'------WebKitFormBoundarySVXtFUdf4EjKf7xe\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundarySVXtFUdf4EjKf7xe--\r\n'
+2025-06-26 01:07:19,192 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryoMAYClh2cVE5SerL
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,192 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,192 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryccAilcTCY4HIljpA
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,192 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryZekqtDaq3sZFDH14
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,192 - DEBUG - Request body: b'------WebKitFormBoundaryoMAYClh2cVE5SerL\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundaryoMAYClh2cVE5SerL--\r\n'
+2025-06-26 01:07:19,203 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,204 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7djLcOeNxSazmSRa
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,205 - DEBUG - Request body: b'------WebKitFormBoundaryccAilcTCY4HIljpA\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundaryccAilcTCY4HIljpA--\r\n'
+2025-06-26 01:07:19,205 - DEBUG - Request body: b'------WebKitFormBoundaryZekqtDaq3sZFDH14\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundaryZekqtDaq3sZFDH14--\r\n'
+2025-06-26 01:07:19,206 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarywywtjLEPM5LbpMKC
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,207 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,207 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundarytUQbYp4DtlAaP6o0
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,208 - DEBUG - Request body: b'------WebKitFormBoundary7djLcOeNxSazmSRa\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundary7djLcOeNxSazmSRa--\r\n'
+2025-06-26 01:07:19,209 - DEBUG - Request headers: Host: localhost:5000
+Connection: keep-alive
+Content-Length: 3498
+Sec-Ch-Ua-Platform: "Windows"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryHB1AiTZLQFEMqmjZ
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://localhost:3000
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:3000/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: es-CO,es;q=0.9,en-CO;q=0.8,en;q=0.7,it-CO;q=0.6,it;q=0.5,fr-CO;q=0.4,fr;q=0.3,es-419;q=0.2
+
+
+2025-06-26 01:07:19,210 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,211 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,211 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp6k1x7wm2.pnml
+2025-06-26 01:07:19,212 - DEBUG - Request body: b'------WebKitFormBoundarywywtjLEPM5LbpMKC\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundarywywtjLEPM5LbpMKC--\r\n'
+2025-06-26 01:07:19,214 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,214 - DEBUG - Request body: b'------WebKitFormBoundarytUQbYp4DtlAaP6o0\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundarytUQbYp4DtlAaP6o0--\r\n'
+2025-06-26 01:07:19,215 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,216 - DEBUG - Request body: b'------WebKitFormBoundaryHB1AiTZLQFEMqmjZ\r\nContent-Disposition: form-data; name="pnml_file"; filename="model.pnml"\r\nContent-Type: application/xml\r\n\r\n<?xml version="1.0" encoding="UTF-8"?>\n<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">\n  <net id="net1" type="http://www.pnml.org/version-2009/grammar/ptnet">\n    <place id="sink">\n      <name><text>sink</text></name>\n    </place>\n    <place id="source">\n      <name><text>source</text></name>\n      <initialMarking>\n        <text>1</text>\n      </initialMarking>\n    </place>\n    <place id="p_2">\n      <name><text>p_2</text></name>\n    </place>\n    <place id="p_4">\n      <name><text>p_4</text></name>\n    </place>\n    <place id="p_1">\n      <name><text>p_1</text></name>\n    </place>\n    <place id="p_3">\n      <name><text>p_3</text></name>\n    </place>\n    <place id="p_5">\n      <name><text>p_5</text></name>\n    </place>\n    <place id="p_6">\n      <name><text>p_6</text></name>\n    </place>\n    <place id="p_7">\n      <name><text>p_7</text></name>\n    </place>\n    <place id="p_8">\n      <name><text>p_8</text></name>\n    </place>\n    <place id="p_9">\n      <name><text>p_9</text></name>\n    </place>\n    <transition id="t_1">\n      <name><text>t_1</text></name>\n    </transition>\n    <transition id="t_4">\n      <name><text>t_4</text></name>\n    </transition>\n    <transition id="t_5">\n      <name><text>C</text></name>\n    </transition>\n    <transition id="t_2">\n      <name><text>A</text></name>\n    </transition>\n    <transition id="t_3">\n      <name><text>B</text></name>\n    </transition>\n    <transition id="t_6">\n      <name><text>D</text></name>\n    </transition>\n    <transition id="t_7">\n      <name><text>t_7</text></name>\n    </transition>\n    <transition id="t_8">\n      <name><text>E</text></name>\n    </transition>\n    <transition id="t_9">\n      <name><text>t_9</text></name>\n    </transition>\n    <transition id="t_10">\n      <name><text>F</text></name>\n    </transition>\n    <transition id="t_11">\n      <name><text>G</text></name>\n    </transition>\n    <arc id="138335141286416" source="p_7" target="t_8"/>\n    <arc id="138335141286160" source="p_6" target="t_7"/>\n    <arc id="138335141286544" source="p_8" target="t_9"/>\n    <arc id="138335141285648" source="p_5" target="t_5"/>\n    <arc id="138335141286672" source="p_8" target="t_10"/>\n    <arc id="138335141285776" source="p_5" target="t_6"/>\n    <arc id="138335141284624" source="t_1" target="p_2"/>\n    <arc id="138335141284752" source="p_1" target="t_2"/>\n    <arc id="138335141284496" source="t_1" target="p_1"/>\n    <arc id="138335141284880" source="t_2" target="p_3"/>\n    <arc id="138335141285008" source="p_3" target="t_4"/>\n    <arc id="138335141285136" source="p_4" target="t_4"/>\n    <arc id="138335141285264" source="p_2" target="t_3"/>\n    <arc id="138335141285392" source="t_3" target="p_4"/>\n    <arc id="138335141285520" source="t_4" target="p_5"/>\n    <arc id="138335141284304" source="source" target="t_1"/>\n    <arc id="138335141285904" source="t_5" target="p_6"/>\n    <arc id="138335141286032" source="t_6" target="p_6"/>\n    <arc id="138335141286288" source="t_7" target="p_7"/>\n    <arc id="138335141286800" source="t_8" target="p_8"/>\n    <arc id="138335141286928" source="t_10" target="p_9"/>\n    <arc id="138335141287056" source="p_9" target="t_11"/>\n    <arc id="138335141287184" source="t_9" target="sink"/>\n    <arc id="138335141287312" source="t_11" target="p_7"/>\n  </net>\n</pnml>\r\n------WebKitFormBoundaryHB1AiTZLQFEMqmjZ--\r\n'
+2025-06-26 01:07:19,217 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,219 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,220 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,221 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,221 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp2rymcdxz.pnml
+2025-06-26 01:07:19,222 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,224 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,226 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp8yaj2b36.pnml
+2025-06-26 01:07:19,226 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp35wt1z6y.pnml
+2025-06-26 01:07:19,228 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,230 - INFO - [2025-06-25 23:07:19] /api/pm4py/reachability-graph called.
+2025-06-26 01:07:19,232 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,234 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,235 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,236 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,237 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp89_ohq41.pnml
+2025-06-26 01:07:19,238 - INFO - Received PNML file: model.pnml
+2025-06-26 01:07:19,240 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp9fdqatq9.pnml
+2025-06-26 01:07:19,242 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpkwaq8v85.pnml
+2025-06-26 01:07:19,243 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,243 - DEBUG - PNML file saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpfo07bvln.pnml
+2025-06-26 01:07:19,244 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,245 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,246 - DEBUG - Importing Petri net from PNML...
+2025-06-26 01:07:19,253 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,254 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,256 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,258 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,259 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,259 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,261 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,262 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,264 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,265 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,267 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,268 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,268 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,270 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,271 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,273 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,273 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,274 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,275 - INFO - Petri net imported successfully.
+2025-06-26 01:07:19,276 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp2rymcdxz.pnml deleted.
+2025-06-26 01:07:19,276 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,276 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,278 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,279 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,279 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,280 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,280 - DEBUG - Constructing reachability graph...
+2025-06-26 01:07:19,281 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,282 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmpfo07bvln.pnml deleted.
+2025-06-26 01:07:19,282 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,282 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,282 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,284 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,285 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,286 - INFO - Reachability graph constructed.
+2025-06-26 01:07:19,287 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,288 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,289 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp6k1x7wm2.pnml deleted.
+2025-06-26 01:07:19,290 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,291 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,291 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,292 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,292 - ERROR - Error: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+2025-06-26 01:07:19,295 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,296 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,298 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp8yaj2b36.pnml deleted.
+2025-06-26 01:07:19,298 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp35wt1z6y.pnml deleted.
+2025-06-26 01:07:19,299 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,300 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,301 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    for i, state in enumerate(reachability_graph.states):
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'pm4py.objects.petri_net.utils.reachability_graph' has no attribute 'states'
+
+2025-06-26 01:07:19,302 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,302 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,303 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,307 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmpkwaq8v85.pnml deleted.
+2025-06-26 01:07:19,308 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp89_ohq41.pnml deleted.
+2025-06-26 01:07:19,311 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,312 - DEBUG - Temporary file C:\Users\jcavi\AppData\Local\Temp\tmp9fdqatq9.pnml deleted.
+2025-06-26 01:07:19,313 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,315 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,315 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,317 - DEBUG - Response: b'{\n  "error": "Error processing with PM4Py: module \'pm4py.objects.petri_net.utils.reachability_graph\' has no attribute \'states\'"\n}\n'
+2025-06-26 01:07:19,321 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,323 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:07:19,325 - INFO - 127.0.0.1 - - [26/Jun/2025 01:07:19] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:09:47,893 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 01:09:50,902 - INFO - Starting Flask application...
+2025-06-26 01:09:50,918 - WARNING -  * Debugger is active!
+2025-06-26 01:09:50,938 - INFO -  * Debugger PIN: 270-680-350
+2025-06-26 01:09:54,076 - INFO - [2025-06-25 23:09:54] Received reachability graph request
+2025-06-26 01:09:54,078 - DEBUG - Processing PNML file
+2025-06-26 01:09:54,081 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp8q0e47x7.pnml
+2025-06-26 01:09:54,082 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:09:54,090 - INFO - PNML imported successfully
+2025-06-26 01:09:54,091 - DEBUG - Constructing reachability graph...
+2025-06-26 01:09:54,093 - INFO - Reachability graph constructed
+2025-06-26 01:09:54,095 - DEBUG - Processing states...
+2025-06-26 01:09:54,095 - WARNING - Could not find marking for state 0
+2025-06-26 01:09:54,096 - ERROR - Error processing state 0: 'TransitionSystem' object has no attribute 'arcs'
+2025-06-26 01:09:54,097 - ERROR - Error processing with PM4Py: 'TransitionSystem' object has no attribute 'arcs'
+2025-06-26 01:09:54,098 - ERROR - Full traceback:
+2025-06-26 01:09:54,100 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 85, in generate_reachability_graph
+    'isTerminal': len([arc for arc in rg.arcs if arc.source == state]) == 0
+                                      ^^^^^^^
+AttributeError: 'TransitionSystem' object has no attribute 'arcs'
+
+2025-06-26 01:09:54,104 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp8q0e47x7.pnml
+2025-06-26 01:09:54,109 - INFO - 127.0.0.1 - - [26/Jun/2025 01:09:54] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:12:41,385 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
