@@ -2,8 +2,8 @@
 import React, { useMemo, useState } from 'react';
 import { Network, Eye, Activity } from 'lucide-react';
 
-// ========== IMPORT del módulo de Reachability separado ==========
-import LTSReachabilityVisualization from './ReachabilityGraph';
+// ========== IMPORT del módulo PM4Py ==========
+import PM4PyReachabilityVisualization from './PM4PyReachabilityGraph';
 
 // Improved PNML Parser that handles initialMarking correctly
 const parseInitialMarking = (processModel) => {
@@ -505,9 +505,9 @@ const LTSVisualization = ({ processModel }) => {
       {/* Vista Petri Net - Tu código existente */}
       {view === 'petri' && <PetriNetVisualization processModel={processModel} />}
       
-      {/* ========== VISTA - Reachability con módulo separado ========== */}
+      {/* ========== VISTA - Reachability con PM4Py ========== */}
       {view === 'reachability' && (
-        <LTSReachabilityVisualization 
+        <PM4PyReachabilityVisualization 
           processModel={processModel}
           currentMarking={currentMarking}
         />
