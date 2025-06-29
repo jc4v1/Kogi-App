@@ -64,7 +64,7 @@ Follow these steps to run the Python application:
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/your-user/Kogui.git
+   git clone https://github.com/your-user/Kogui.git](https://github.com/jc4v1/DemoBPM2025.git
 
 Copy your input models into the ./Data folder:
 
