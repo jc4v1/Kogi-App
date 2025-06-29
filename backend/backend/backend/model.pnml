@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="reachability_example" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>reachability_example</text>
+    </name>
+    <page id="n0">
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      </place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="p_2">
+        <name>
+          <text>p_2</text>
+        </name>
+      </place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      </place>
+      <place id="p_1">
+        <name>
+          <text>p_1</text>
+        </name>
+      </place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      </place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      </place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      </place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      </place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      </place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      </place>
+      <transition id="t_1">
+        <name>
+          <text>t_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="64410d1c-27a5-45f3-bc14-3c82f4d5fdb5"/>
+      </transition>
+      <transition id="t_4">
+        <name>
+          <text>t_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="6bb377b7-1b06-4d90-9a9f-6f99a00502fa"/>
+      </transition>
+      <transition id="t_5">
+        <name>
+          <text>C</text>
+        </name>
+      </transition>
+      <transition id="t_2">
+        <name>
+          <text>A</text>
+        </name>
+      </transition>
+      <transition id="t_3">
+        <name>
+          <text>B</text>
+        </name>
+      </transition>
+      <transition id="t_6">
+        <name>
+          <text>D</text>
+        </name>
+      </transition>
+      <transition id="t_7">
+        <name>
+          <text>t_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c699a0ea-128b-4108-8880-81d9687b6d8a"/>
+      </transition>
+      <transition id="t_8">
+        <name>
+          <text>E</text>
+        </name>
+      </transition>
+      <transition id="t_9">
+        <name>
+          <text>t_9</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="fbee8ce4-3cb3-4a40-8ead-520e59bebb28"/>
+      </transition>
+      <transition id="t_10">
+        <name>
+          <text>F</text>
+        </name>
+      </transition>
+      <transition id="t_11">
+        <name>
+          <text>G</text>
+        </name>
+      </transition>
+      <arc id="138335141286416" source="p_7" target="t_8"/>
+      <arc id="138335141286160" source="p_6" target="t_7"/>
+      <arc id="138335141286544" source="p_8" target="t_9"/>
+      <arc id="138335141285648" source="p_5" target="t_5"/>
+      <arc id="138335141286672" source="p_8" target="t_10"/>
+      <arc id="138335141285776" source="p_5" target="t_6"/>
+      <arc id="138335141284624" source="t_1" target="p_2"/>
+      <arc id="138335141284752" source="p_1" target="t_2"/>
+      <arc id="138335141284496" source="t_1" target="p_1"/>
+      <arc id="138335141284880" source="t_2" target="p_3"/>
+      <arc id="138335141285008" source="p_3" target="t_4"/>
+      <arc id="138335141285136" source="p_4" target="t_4"/>
+      <arc id="138335141285264" source="p_2" target="t_3"/>
+      <arc id="138335141285392" source="t_3" target="p_4"/>
+      <arc id="138335141285520" source="t_4" target="p_5"/>
+      <arc id="138335141284304" source="source" target="t_1"/>
+      <arc id="138335141285904" source="t_5" target="p_6"/>
+      <arc id="138335141286032" source="t_6" target="p_6"/>
+      <arc id="138335141286288" source="t_7" target="p_7"/>
+      <arc id="138335141286800" source="t_8" target="p_8"/>
+      <arc id="138335141286928" source="t_10" target="p_9"/>
+      <arc id="138335141287056" source="p_9" target="t_11"/>
+      <arc id="138335141287184" source="t_9" target="sink"/>
+      <arc id="138335141287312" source="t_11" target="p_7"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

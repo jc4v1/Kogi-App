@@ -522,3 +522,345 @@ AttributeError: 'TransitionSystem' object has no attribute 'arcs'
 2025-06-26 01:09:54,104 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp8q0e47x7.pnml
 2025-06-26 01:09:54,109 - INFO - 127.0.0.1 - - [26/Jun/2025 01:09:54] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
 2025-06-26 01:12:41,385 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 01:15:32,382 - INFO - Starting Flask application...
+2025-06-26 01:15:32,647 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-26 01:15:32,647 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-26 01:15:32,685 - INFO -  * Restarting with stat
+2025-06-26 01:15:34,788 - INFO - Starting Flask application...
+2025-06-26 01:15:34,806 - WARNING -  * Debugger is active!
+2025-06-26 01:15:34,818 - INFO -  * Debugger PIN: 311-353-722
+2025-06-26 01:17:23,883 - INFO - 127.0.0.1 - - [26/Jun/2025 01:17:23] "[31m[1mGET /api/pm4py/reachability-graph HTTP/1.1[0m" 405 -
+2025-06-26 01:17:24,663 - INFO - 127.0.0.1 - - [26/Jun/2025 01:17:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-26 01:17:28,912 - INFO - 127.0.0.1 - - [26/Jun/2025 01:17:28] "[33mGET /api/pm4py/reachability-graph/healt HTTP/1.1[0m" 404 -
+2025-06-26 01:17:31,357 - INFO - 127.0.0.1 - - [26/Jun/2025 01:17:31] "[33mGET /api/pm4py/reachability-graph/health HTTP/1.1[0m" 404 -
+2025-06-26 01:18:26,663 - INFO - 127.0.0.1 - - [26/Jun/2025 01:18:26] "[31m[1mGET /api/pm4py/reachability-graph HTTP/1.1[0m" 405 -
+2025-06-26 01:42:43,868 - INFO - [2025-06-25 23:42:43] Received reachability graph request
+2025-06-26 01:42:43,871 - DEBUG - Processing PNML file
+2025-06-26 01:42:43,875 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpshat0zns.pnml
+2025-06-26 01:42:43,876 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:42:43,907 - INFO - PNML imported successfully
+2025-06-26 01:42:43,909 - DEBUG - Constructing reachability graph...
+2025-06-26 01:42:43,911 - INFO - Reachability graph constructed
+2025-06-26 01:42:43,912 - ERROR - Error processing with PM4Py: name 'marking_dict' is not defined
+2025-06-26 01:42:43,912 - ERROR - Full traceback:
+2025-06-26 01:42:43,946 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    'marking': marking_dict,
+               ^^^^^^^^^^^^
+NameError: name 'marking_dict' is not defined
+
+2025-06-26 01:42:43,948 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpshat0zns.pnml
+2025-06-26 01:42:43,949 - INFO - 127.0.0.1 - - [26/Jun/2025 01:42:43] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:43:05,915 - INFO - [2025-06-25 23:43:05] Received reachability graph request
+2025-06-26 01:43:05,918 - DEBUG - Processing PNML file
+2025-06-26 01:43:05,925 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp8vkz5qf7.pnml
+2025-06-26 01:43:05,927 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:43:05,933 - INFO - PNML imported successfully
+2025-06-26 01:43:05,934 - DEBUG - Constructing reachability graph...
+2025-06-26 01:43:05,937 - INFO - Reachability graph constructed
+2025-06-26 01:43:05,938 - ERROR - Error processing with PM4Py: name 'marking_dict' is not defined
+2025-06-26 01:43:05,938 - ERROR - Full traceback:
+2025-06-26 01:43:05,941 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    'marking': marking_dict,
+               ^^^^^^^^^^^^
+NameError: name 'marking_dict' is not defined
+
+2025-06-26 01:43:05,944 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp8vkz5qf7.pnml
+2025-06-26 01:43:05,946 - INFO - 127.0.0.1 - - [26/Jun/2025 01:43:05] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:43:06,228 - INFO - [2025-06-25 23:43:06] Received reachability graph request
+2025-06-26 01:43:06,228 - DEBUG - Processing PNML file
+2025-06-26 01:43:06,228 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpdv937l07.pnml
+2025-06-26 01:43:06,234 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:43:06,242 - INFO - PNML imported successfully
+2025-06-26 01:43:06,242 - DEBUG - Constructing reachability graph...
+2025-06-26 01:43:06,242 - INFO - Reachability graph constructed
+2025-06-26 01:43:06,242 - ERROR - Error processing with PM4Py: name 'marking_dict' is not defined
+2025-06-26 01:43:06,242 - ERROR - Full traceback:
+2025-06-26 01:43:06,242 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 64, in generate_reachability_graph
+    'marking': marking_dict,
+               ^^^^^^^^^^^^
+NameError: name 'marking_dict' is not defined
+
+2025-06-26 01:43:06,242 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpdv937l07.pnml
+2025-06-26 01:43:06,242 - INFO - 127.0.0.1 - - [26/Jun/2025 01:43:06] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:47:41,739 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 01:47:42,110 - INFO -  * Restarting with stat
+2025-06-26 01:49:08,822 - INFO - Starting Flask application at 2025-06-25 23:49:08 by user jc4v1...
+2025-06-26 01:49:09,066 - WARNING -  * Debugger is active!
+2025-06-26 01:49:09,095 - INFO -  * Debugger PIN: 311-353-722
+2025-06-26 01:49:12,132 - INFO - [2025-06-25 23:49:12] Received reachability graph request from 127.0.0.1
+2025-06-26 01:49:12,137 - INFO - [2025-06-25 23:49:12] Received reachability graph request from 127.0.0.1
+2025-06-26 01:49:12,142 - INFO - [2025-06-25 23:49:12] Received reachability graph request from 127.0.0.1
+2025-06-26 01:49:12,146 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp13iertt9.pnml
+2025-06-26 01:49:12,147 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp65plfrsw.pnml
+2025-06-26 01:49:12,148 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp7yn6jwan.pnml
+2025-06-26 01:49:12,148 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:49:12,149 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:49:12,149 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 01:49:12,179 - INFO - PNML imported successfully
+2025-06-26 01:49:12,181 - INFO - PNML imported successfully
+2025-06-26 01:49:12,181 - DEBUG - Constructing reachability graph...
+2025-06-26 01:49:12,182 - DEBUG - Constructing reachability graph...
+2025-06-26 01:49:12,184 - INFO - PNML imported successfully
+2025-06-26 01:49:12,186 - INFO - Reachability graph constructed
+2025-06-26 01:49:12,189 - INFO - Reachability graph constructed
+2025-06-26 01:49:12,190 - DEBUG - Constructing reachability graph...
+2025-06-26 01:49:12,191 - DEBUG - Processing states...
+2025-06-26 01:49:12,192 - DEBUG - Processing states...
+2025-06-26 01:49:12,194 - INFO - Reachability graph constructed
+2025-06-26 01:49:12,195 - ERROR - Error processing state 0: 'Transition' object has no attribute 'source'
+2025-06-26 01:49:12,196 - ERROR - Error processing state 0: 'Transition' object has no attribute 'source'
+2025-06-26 01:49:12,197 - DEBUG - Processing states...
+2025-06-26 01:49:12,198 - ERROR - Error processing with PM4Py: 'Transition' object has no attribute 'source'
+2025-06-26 01:49:12,199 - ERROR - Error processing with PM4Py: 'Transition' object has no attribute 'source'
+2025-06-26 01:49:12,200 - ERROR - Error processing state 0: 'Transition' object has no attribute 'source'
+2025-06-26 01:49:12,201 - ERROR - Full traceback:
+2025-06-26 01:49:12,202 - ERROR - Full traceback:
+2025-06-26 01:49:12,203 - ERROR - Error processing with PM4Py: 'Transition' object has no attribute 'source'
+2025-06-26 01:49:12,207 - ERROR - Full traceback:
+2025-06-26 01:49:12,222 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 82, in generate_reachability_graph
+    'isTerminal': len([t for t in rg.transitions if t.source == state]) == 0
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 82, in <listcomp>
+    'isTerminal': len([t for t in rg.transitions if t.source == state]) == 0
+                                                    ^^^^^^^^
+AttributeError: 'Transition' object has no attribute 'source'
+
+2025-06-26 01:49:12,224 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 82, in generate_reachability_graph
+    'isTerminal': len([t for t in rg.transitions if t.source == state]) == 0
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 82, in <listcomp>
+    'isTerminal': len([t for t in rg.transitions if t.source == state]) == 0
+                                                    ^^^^^^^^
+AttributeError: 'Transition' object has no attribute 'source'
+
+2025-06-26 01:49:12,225 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 82, in generate_reachability_graph
+    'isTerminal': len([t for t in rg.transitions if t.source == state]) == 0
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 82, in <listcomp>
+    'isTerminal': len([t for t in rg.transitions if t.source == state]) == 0
+                                                    ^^^^^^^^
+AttributeError: 'Transition' object has no attribute 'source'
+
+2025-06-26 01:49:12,228 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp13iertt9.pnml
+2025-06-26 01:49:12,228 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp65plfrsw.pnml
+2025-06-26 01:49:12,231 - INFO - 127.0.0.1 - - [26/Jun/2025 01:49:12] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:49:12,231 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp7yn6jwan.pnml
+2025-06-26 01:49:12,232 - INFO - 127.0.0.1 - - [26/Jun/2025 01:49:12] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:49:12,234 - INFO - 127.0.0.1 - - [26/Jun/2025 01:49:12] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 01:51:52,053 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 01:51:52,524 - INFO -  * Restarting with stat
+2025-06-26 02:08:19,311 - INFO - Starting Flask application at 2025-06-26 00:08:19 by user jc4v1...
+2025-06-26 02:08:19,839 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-26 02:08:19,840 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-26 02:08:19,844 - INFO -  * Restarting with stat
+2025-06-26 02:08:22,915 - INFO - Starting Flask application at 2025-06-26 00:08:22 by user jc4v1...
+2025-06-26 02:08:22,944 - WARNING -  * Debugger is active!
+2025-06-26 02:08:22,955 - INFO -  * Debugger PIN: 323-504-029
+2025-06-26 02:09:23,603 - INFO - 127.0.0.1 - - [26/Jun/2025 02:09:23] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-26 02:09:24,330 - INFO - 127.0.0.1 - - [26/Jun/2025 02:09:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-26 02:09:38,437 - INFO - 127.0.0.1 - - [26/Jun/2025 02:09:38] "[31m[1mGET /api/pm4py/reachability-graph HTTP/1.1[0m" 405 -
+2025-06-26 02:09:42,650 - INFO - 127.0.0.1 - - [26/Jun/2025 02:09:42] "[33mGET /api/pm4py/reachability-graph/health HTTP/1.1[0m" 404 -
+2025-06-26 02:11:30,339 - INFO - 127.0.0.1 - - [26/Jun/2025 02:11:30] "GET /api/health HTTP/1.1" 200 -
+2025-06-26 02:15:20,981 - INFO - [2025-06-26 00:15:20] Received reachability graph request from 127.0.0.1
+2025-06-26 02:15:20,986 - WARNING - No PNML file in request
+2025-06-26 02:15:20,987 - INFO - 127.0.0.1 - - [26/Jun/2025 02:15:20] "[31m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 400 -
+2025-06-26 02:21:00,803 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 02:21:01,374 - INFO -  * Restarting with stat
+2025-06-26 02:21:05,529 - INFO - Starting Flask application at 2025-06-26 00:21:05 by user jc4v1...
+2025-06-26 02:21:05,570 - WARNING -  * Debugger is active!
+2025-06-26 02:21:05,579 - INFO -  * Debugger PIN: 323-504-029
+2025-06-26 02:21:09,812 - INFO - [2025-06-26 00:21:09] Received reachability graph request from 127.0.0.1
+2025-06-26 02:21:09,820 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpdxo1gv5s.pnml
+2025-06-26 02:21:09,822 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:21:09,875 - INFO - PNML imported successfully
+2025-06-26 02:21:09,875 - DEBUG - Constructing reachability graph...
+2025-06-26 02:21:09,878 - INFO - Reachability graph constructed
+2025-06-26 02:21:09,879 - DEBUG - Processing states...
+2025-06-26 02:21:09,880 - DEBUG - Processing transitions...
+2025-06-26 02:21:09,880 - ERROR - Error processing with PM4Py: cannot unpack non-iterable Transition object
+2025-06-26 02:21:09,881 - ERROR - Full traceback:
+2025-06-26 02:21:09,883 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 92, in generate_reachability_graph
+    for i, (source_state, transition, target_state) in enumerate(rg.transitions):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable Transition object
+
+2025-06-26 02:21:09,886 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpdxo1gv5s.pnml
+2025-06-26 02:21:09,889 - INFO - 127.0.0.1 - - [26/Jun/2025 02:21:09] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 02:21:29,985 - INFO - [2025-06-26 00:21:29] Received reachability graph request from 127.0.0.1
+2025-06-26 02:21:29,993 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpxaq10lh7.pnml
+2025-06-26 02:21:29,995 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:21:30,048 - INFO - PNML imported successfully
+2025-06-26 02:21:30,049 - DEBUG - Constructing reachability graph...
+2025-06-26 02:21:30,055 - INFO - Reachability graph constructed
+2025-06-26 02:21:30,056 - DEBUG - Processing states...
+2025-06-26 02:21:30,057 - DEBUG - Processing transitions...
+2025-06-26 02:21:30,058 - ERROR - Error processing with PM4Py: cannot unpack non-iterable Transition object
+2025-06-26 02:21:30,059 - ERROR - Full traceback:
+2025-06-26 02:21:30,061 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 92, in generate_reachability_graph
+    for i, (source_state, transition, target_state) in enumerate(rg.transitions):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable Transition object
+
+2025-06-26 02:21:30,064 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpxaq10lh7.pnml
+2025-06-26 02:21:30,066 - INFO - 127.0.0.1 - - [26/Jun/2025 02:21:30] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 02:21:30,291 - INFO - [2025-06-26 00:21:30] Received reachability graph request from 127.0.0.1
+2025-06-26 02:21:30,296 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpd2qpd4r8.pnml
+2025-06-26 02:21:30,297 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:21:30,304 - INFO - PNML imported successfully
+2025-06-26 02:21:30,305 - DEBUG - Constructing reachability graph...
+2025-06-26 02:21:30,309 - INFO - Reachability graph constructed
+2025-06-26 02:21:30,309 - DEBUG - Processing states...
+2025-06-26 02:21:30,310 - DEBUG - Processing transitions...
+2025-06-26 02:21:30,311 - ERROR - Error processing with PM4Py: cannot unpack non-iterable Transition object
+2025-06-26 02:21:30,312 - ERROR - Full traceback:
+2025-06-26 02:21:30,314 - ERROR - Traceback (most recent call last):
+  File "C:\Users\jcavi\Documents\GitHub\DemoBPM2025\backend\backend\backend\app.py", line 92, in generate_reachability_graph
+    for i, (source_state, transition, target_state) in enumerate(rg.transitions):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable Transition object
+
+2025-06-26 02:21:30,316 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpd2qpd4r8.pnml
+2025-06-26 02:21:30,318 - INFO - 127.0.0.1 - - [26/Jun/2025 02:21:30] "[35m[1mPOST /api/pm4py/reachability-graph HTTP/1.1[0m" 500 -
+2025-06-26 02:23:31,487 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 02:23:31,855 - INFO -  * Restarting with stat
+2025-06-26 02:23:55,658 - INFO - Starting Flask application at 2025-06-26 00:23:55 by user jc4v1...
+2025-06-26 02:23:55,783 - WARNING -  * Debugger is active!
+2025-06-26 02:23:55,793 - INFO -  * Debugger PIN: 323-504-029
+2025-06-26 02:23:56,003 - INFO - [2025-06-26 00:23:56] Received reachability graph request from 127.0.0.1
+2025-06-26 02:23:56,008 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp6lsadw0o.pnml
+2025-06-26 02:23:56,010 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:23:56,016 - INFO - PNML imported successfully
+2025-06-26 02:23:56,017 - DEBUG - Constructing reachability graph...
+2025-06-26 02:23:56,019 - INFO - Reachability graph constructed
+2025-06-26 02:23:56,020 - DEBUG - Processing states...
+2025-06-26 02:23:56,021 - DEBUG - Processing transitions...
+2025-06-26 02:23:56,022 - ERROR - Unknown transition format: (t_8, 'E')
+2025-06-26 02:23:56,022 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:23:56,024 - ERROR - Unknown transition format: (t_11, 'G')
+2025-06-26 02:23:56,024 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:23:56,024 - ERROR - Unknown transition format: (t_6, 'D')
+2025-06-26 02:23:56,025 - ERROR - Unknown transition format: (t_4, 't_4')
+2025-06-26 02:23:56,026 - ERROR - Unknown transition format: (t_10, 'F')
+2025-06-26 02:23:56,026 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:23:56,027 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:23:56,028 - ERROR - Unknown transition format: (t_1, 't_1')
+2025-06-26 02:23:56,028 - ERROR - Unknown transition format: (t_5, 'C')
+2025-06-26 02:23:56,029 - ERROR - Unknown transition format: (t_9, 't_9')
+2025-06-26 02:23:56,030 - ERROR - Unknown transition format: (t_7, 't_7')
+2025-06-26 02:23:56,031 - INFO - Successfully generated graph with 11 states and 0 transitions
+2025-06-26 02:23:56,034 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp6lsadw0o.pnml
+2025-06-26 02:23:56,036 - INFO - 127.0.0.1 - - [26/Jun/2025 02:23:56] "POST /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 02:25:31,332 - INFO - [2025-06-26 00:25:31] Received reachability graph request from 127.0.0.1
+2025-06-26 02:25:31,332 - INFO - [2025-06-26 00:25:31] Received reachability graph request from 127.0.0.1
+2025-06-26 02:25:31,344 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp0yrhncm_.pnml
+2025-06-26 02:25:31,345 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpnle2ln9j.pnml
+2025-06-26 02:25:31,345 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:25:31,345 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:25:31,351 - INFO - PNML imported successfully
+2025-06-26 02:25:31,351 - DEBUG - Constructing reachability graph...
+2025-06-26 02:25:31,351 - INFO - PNML imported successfully
+2025-06-26 02:25:31,351 - INFO - Reachability graph constructed
+2025-06-26 02:25:31,359 - DEBUG - Constructing reachability graph...
+2025-06-26 02:25:31,359 - DEBUG - Processing states...
+2025-06-26 02:25:31,361 - INFO - Reachability graph constructed
+2025-06-26 02:25:31,361 - DEBUG - Processing transitions...
+2025-06-26 02:25:31,361 - DEBUG - Processing states...
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_8, 'E')
+2025-06-26 02:25:31,361 - DEBUG - Processing transitions...
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_8, 'E')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_11, 'G')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_11, 'G')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_6, 'D')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_4, 't_4')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_6, 'D')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_10, 'F')
+2025-06-26 02:25:31,361 - ERROR - Unknown transition format: (t_4, 't_4')
+2025-06-26 02:25:31,376 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:25:31,376 - ERROR - Unknown transition format: (t_10, 'F')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_1, 't_1')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_5, 'C')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_1, 't_1')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_9, 't_9')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_5, 'C')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_7, 't_7')
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_9, 't_9')
+2025-06-26 02:25:31,378 - INFO - Successfully generated graph with 11 states and 0 transitions
+2025-06-26 02:25:31,378 - ERROR - Unknown transition format: (t_7, 't_7')
+2025-06-26 02:25:31,378 - INFO - Successfully generated graph with 11 states and 0 transitions
+2025-06-26 02:25:31,378 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmp0yrhncm_.pnml
+2025-06-26 02:25:31,378 - INFO - 127.0.0.1 - - [26/Jun/2025 02:25:31] "POST /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 02:25:31,378 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpnle2ln9j.pnml
+2025-06-26 02:25:31,394 - INFO - 127.0.0.1 - - [26/Jun/2025 02:25:31] "POST /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 02:29:25,163 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 02:29:25,548 - INFO -  * Restarting with stat
+2025-06-26 02:29:31,267 - INFO - Starting Flask application at 2025-06-26 00:29:31 by user jc4v1...
+2025-06-26 02:29:31,328 - WARNING -  * Debugger is active!
+2025-06-26 02:29:31,341 - INFO -  * Debugger PIN: 323-504-029
+2025-06-26 02:29:39,592 - INFO - [2025-06-26 00:29:39] Received reachability graph request from 127.0.0.1
+2025-06-26 02:29:39,592 - INFO - [2025-06-26 00:29:39] Received reachability graph request from 127.0.0.1
+2025-06-26 02:29:39,605 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpctexgea_.pnml
+2025-06-26 02:29:39,606 - DEBUG - Saved to temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpeqqn0sol.pnml
+2025-06-26 02:29:39,609 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:29:39,609 - DEBUG - Importing PNML with PM4Py...
+2025-06-26 02:29:39,626 - INFO - PNML imported successfully
+2025-06-26 02:29:39,628 - INFO - PNML imported successfully
+2025-06-26 02:29:39,628 - DEBUG - Constructing reachability graph...
+2025-06-26 02:29:39,630 - DEBUG - Constructing reachability graph...
+2025-06-26 02:29:39,634 - INFO - Reachability graph constructed
+2025-06-26 02:29:39,637 - INFO - Reachability graph constructed
+2025-06-26 02:29:39,639 - DEBUG - Processing transitions...
+2025-06-26 02:29:39,640 - DEBUG - Processing transitions...
+2025-06-26 02:29:39,641 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:29:39,642 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:29:39,643 - ERROR - Unknown transition format: (t_8, 'E')
+2025-06-26 02:29:39,644 - ERROR - Unknown transition format: (t_8, 'E')
+2025-06-26 02:29:39,645 - ERROR - Unknown transition format: (t_9, 't_9')
+2025-06-26 02:29:39,647 - ERROR - Unknown transition format: (t_9, 't_9')
+2025-06-26 02:29:39,648 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:29:39,650 - ERROR - Unknown transition format: (t_2, 'A')
+2025-06-26 02:29:39,651 - ERROR - Unknown transition format: (t_7, 't_7')
+2025-06-26 02:29:39,652 - ERROR - Unknown transition format: (t_7, 't_7')
+2025-06-26 02:29:39,653 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:29:39,654 - ERROR - Unknown transition format: (t_5, 'C')
+2025-06-26 02:29:39,657 - ERROR - Unknown transition format: (t_5, 'C')
+2025-06-26 02:29:39,658 - ERROR - Unknown transition format: (t_6, 'D')
+2025-06-26 02:29:39,659 - ERROR - Unknown transition format: (t_6, 'D')
+2025-06-26 02:29:39,660 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:29:39,660 - ERROR - Unknown transition format: (t_10, 'F')
+2025-06-26 02:29:39,661 - ERROR - Unknown transition format: (t_10, 'F')
+2025-06-26 02:29:39,663 - ERROR - Unknown transition format: (t_11, 'G')
+2025-06-26 02:29:39,664 - ERROR - Unknown transition format: (t_11, 'G')
+2025-06-26 02:29:39,664 - ERROR - Unknown transition format: (t_4, 't_4')
+2025-06-26 02:29:39,665 - ERROR - Unknown transition format: (t_4, 't_4')
+2025-06-26 02:29:39,667 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:29:39,670 - ERROR - Unknown transition format: (t_3, 'B')
+2025-06-26 02:29:39,671 - ERROR - Unknown transition format: (t_1, 't_1')
+2025-06-26 02:29:39,672 - ERROR - Unknown transition format: (t_1, 't_1')
+2025-06-26 02:29:39,674 - INFO - Successfully generated graph with 11 states and 0 transitions
+2025-06-26 02:29:39,675 - INFO - Successfully generated graph with 11 states and 0 transitions
+2025-06-26 02:29:39,678 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpctexgea_.pnml
+2025-06-26 02:29:39,681 - INFO - 127.0.0.1 - - [26/Jun/2025 02:29:39] "POST /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 02:29:39,681 - DEBUG - Removed temporary file: C:\Users\jcavi\AppData\Local\Temp\tmpeqqn0sol.pnml
+2025-06-26 02:29:39,683 - INFO - 127.0.0.1 - - [26/Jun/2025 02:29:39] "POST /api/pm4py/reachability-graph HTTP/1.1" 200 -
+2025-06-26 03:07:31,513 - INFO -  * Detected change in 'C:\\Users\\jcavi\\Documents\\GitHub\\DemoBPM2025\\backend\\backend\\backend\\app.py', reloading
+2025-06-26 03:07:32,046 - INFO -  * Restarting with stat
+2025-06-26 03:07:50,708 - INFO - Starting Flask application at 2025-06-26 01:07:50 by user jc4v1...
+2025-06-26 03:07:50,758 - WARNING -  * Debugger is active!
+2025-06-26 03:07:50,766 - INFO -  * Debugger PIN: 323-504-029
