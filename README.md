@@ -4,16 +4,33 @@ The goal of a business process is to orchestrate activities to achieve a busines
 
 This repository contains three versions of the **Kogui** application, designed to evaluate **compliance** between business process models and goal models. It supports **design-time analysis**, **runtime trace evaluation**, and **what-if scenario simulation**.
 
-To use Kogui, you must provide **three well-formed input models**:
+To use Kogui, you must provide **three well-formed [1] input models**:
 - A **process model**
 - A **goal model**
 - A **mapping** between process activities and goal model elements
 
 Kogui supports both **imperative** and **declarative** process models.
 
+## References
+
+[1] Caballero Villalobos, J., Burattin, A., & López-Acosta, H.-A. (Accepted/In press). High-Level Requirements-Driven Business Process Compliance. In Proceedings of the 23rd International Conference on Business Process Management (BPM 2025) Springer.
+
 ---
 
-##  Application Versions
+##  Getting Started with Kogi App
+
+This repository uses Git submodules. To clone everything correctly, run:
+
+```bash
+git clone --recurse-submodules https://github.com/jc4v1/Kogi-App.git
+```
+
+Or, if you already cloned:
+
+```bash
+git submodule update --init --recursive
+```
+
 
 ### 1. Python Application
 
@@ -22,107 +39,16 @@ Modular application that supports:
 -  Runtime trace analysis (`trace_analyzer.py`)
 -  What-if scenario simulation (`event_analyzer.py`)
 
-**Input formats**:
-- Process model: `.bpmn`
-- Goal model: `.json`
-- Mapping: `.csv`
-
-**Tools used for modeling**:
-- SAP Signavio (processes)
-- PiStar (goal models)
-- Excel (mappings)
+Instructions: See `GettingStarted-KogiPython.md`
 
 ---
 
-### 2. React App V1 (Vue.js-based)
+### 2. React App V2 (Vue.js-based)
 
-Front-end application built with **Vue.js** to explore **what-if** scenarios interactively.
+Experimental interface with a Node.js frontend and Python backend for exploring compliance scenarios.
 
-**Input formats**:
-- Process model: `.bpmn`
-- Goal model: `.json`
-- Mapping: `.csv`
+Instructions: See `GettingStarted-KogiReact.md`
 
-Supports local deployment.
-
----
-
-### 3. React App V2 (Node.js + Python Backend)
-
-Experimental beta version with a Node.js-based front end connected to a Python back end.
-
-**Input formats**:
-- Process model: `.pnml` (Petri nets, supported by PM4PY)
-- Goal model: `.json`
-- Mapping: `.csv`
-
----
-
-##  Getting Started with the Python Application
-
-Follow these steps to run the Python application:
-
-1. Clone or download the repository:
-   ```bash
-   git clone https://github.com/jc4v1/DemoBPM2025.git
-
-Copy your input models into the ./Data folder:
-
-your_model.bpmn
-
-
----
-
-### 2. Prepare Your Input Files
-
-Place your input models into the `Data/` folder:
-
-- `your_model.bpmn` — process model  
-- `your_goals.json` — goal model  
-- `your_mapping.csv` — mapping between process and goals  
-
-You can create these files using tools such as:
-- **SAP Signavio** for process models
-- **PiStar** for goal models
-- **Excel** or any spreadsheet editor for mappings
-
----
-
-### 3. Install Dependencies
-
-Make sure Python is installed. Then install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Navigate to the application Folder
-```bash
-cd App
-```
-
----
-
-### 5. Run the Desired Module
-
-Depending on the type of analysis you want to perform, run one of the following scripts:
-
-####  Design-time Compliance Analysis
-
-```bash
-python main.py
-```
-
-####  Runtime trace analysis
-
-```bash
-python trace_analyzer.py
-```
-
-####  What-if scenario simulation
-```bash
-python event_analyzer.py
-```
 
 
 
