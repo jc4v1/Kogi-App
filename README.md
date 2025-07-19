@@ -43,7 +43,7 @@ Instructions: See `GettingStarted-KogiPython.md`
 
 ---
 
-### 2. React App V2 (Vue.js-based)
+### 2. React App V2
 
 Experimental interface with a Node.js frontend and Python backend for exploring compliance scenarios.
 
