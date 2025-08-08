@@ -1,3 +1,6 @@
 [submodule "Python-App"]
 	path = Python-App
 	url = https://github.com/jc4v1/Kogi-Python.git
+[submodule "App-Python"]
+	path = App-Python
+	url = https://github.com/jc4v1/Kogi-Python.git
