@@ -1,6 +1,3 @@
-[submodule "Python App V1"]
-	path = Python App V1
-	url = https://github.com/jc4v1/Traces-driven-goals-analysis.git
 [submodule "React App V1"]
 	path = React App V1
 	url = https://github.com/jc4v1/MyGoalApplication.git
