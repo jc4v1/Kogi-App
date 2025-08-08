@@ -1,0 +1,138 @@
+\documentclass{article}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{amsmath}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+\newcommand{\BackpropFulfilled}[2]{\textbf{Backprop Fulfilled: (#1, #2)}}
+\newcommand{\BackpropDenied}[2]{\textbf{Backprop Denied: (#1, #2)}}
+
+
+\begin{document}
+
+% First Algorithm: Check function
+\begin{algorithm}[H]
+\SetAlgoLined
+\SetKwInOut{Input}{Input}
+\SetKwInOut{Output}{Output}
+\SetKwFunction{Check}{Check}
+
+\Input{r: goal/task that executed event refers to; M: marking}
+\Output{Updated marking M J}
+
+\BlankLine
+\Check{r, M}{
+    \eIf{type(r) is goal} {
+        $M^G(r) \leftarrow achieved$\;
+    }{
+        \If{type(r) is task} {
+            $M^T(r) \leftarrow activated$\;
+        }
+    }
+    
+    \ForEach{p in parents(r)}{
+        $M^L((p, r)) \leftarrow activated$\;
+        
+        \eIf{type(p) is quality}{
+            \uIf{contrib\_type(r,p) is ``MAKE''}{
+                $M^Q(p) \leftarrow fulfilled$\;
+            }
+            \ElseIf{contrib\_type(r,p) is ``BREAK''}{
+                $M^Q(p) \leftarrow denied$\;
+            }
+            
+            \uIf{$M^Q(p)$ is fulfilled}{
+                \BackpropFulfilled{p, M}\;
+            }
+            \ElseIf{$M^Q(p)$ is denied}{
+                \BackpropDenied{p, M}\;
+            }
+        }{
+            \uIf{ref\_type(p) is ``OR''}{
+                \eIf{type(p) is goal}{
+                    $M^G(p) \leftarrow achieved$\;
+                }{
+                    \If{type(p) is task}{
+                        $M^T(p) \leftarrow activated$\;
+                    }
+                }
+            }
+            \ElseIf{ref\_type(p) is ``AND''}{
+                all\_activated $\leftarrow$ true\;
+                \ForEach{c in children(p)}{
+                    \If{$M^L((p,c))$ is not activated}{
+                        all\_activated $\leftarrow$ false\;
+                        break\;
+                    }
+                }
+                \eIf{type(p) is goal}{
+                    $M^G(p) \leftarrow$ all\_activated ? achieved : partially\_achieved\;
+                }{
+                    \If{type(p) is task}{
+                        $M^T(p) \leftarrow$ all\_activated ? activated : partially\_activated\;
+                    }
+                }
+            }
+            \Check{p, M}\;
+        }
+    }
+}
+\caption{Goal Model Update Algorithm - Check Function}
+\end{algorithm}
+
+% Second Algorithm: BackpropFulfilled function
+\begin{algorithm}[H]
+\SetAlgoLined
+\SetKwFunction{BackpropFulfilled}{BackpropFulfilled}
+
+\BackpropFulfilled{q, M}{
+    \ForEach{c in children(q)}{
+        \If{contrib\_type((c, q)) is ``BREAK'' and $M^L((c, q))$ is activated}{
+            $M^L((c, q)) \leftarrow deactivated$\;
+            \eIf{type(c) is goal}{
+                $M^G(c) \leftarrow deactivated$\;
+            }{
+                \If{type(c) is task}{
+                    $M^T(c) \leftarrow deactivated$\;
+                }
+            }
+            \ForEach{gc in children(c)}{
+                \If{$M^L((c, gc))$ is activated}{
+                    $M^L((c, gc)) \leftarrow deactivated$\;
+                    \Check{gc, M}\;
+                }
+            }
+        }
+    }
+}
+\caption{Goal Model Update Algorithm - BackpropFulfilled Function}
+\end{algorithm}
+
+% Third Algorithm: BackpropDenied function
+\begin{algorithm}[H]
+\SetAlgoLined
+\SetKwFunction{BackpropDenied}{BackpropDenied}
+
+\BackpropDenied{q, M}{
+    \ForEach{c in children(q)}{
+        \If{contrib\_type((c, q)) is ``MAKE'' and $M^L((c, q))$ is activated}{
+            $M^L((c, q)) \leftarrow deactivated$\;
+            \eIf{type(c) is goal}{
+                $M^G(c) \leftarrow deactivated$\;
+            }{
+                \If{type(c) is task}{
+                    $M^T(c) \leftarrow deactivated$\;
+                }
+            }
+            \ForEach{gc in children(c)}{
+                \If{$M^L((c, gc))$ is activated}{
+                    $M^L((c, gc)) \leftarrow deactivated$\;
+                    \Check{gc, M}\;
+                }
+            }
+        }
+    }
+}
+\caption{Goal Model Update Algorithm - BackpropDenied Function}
+\end{algorithm}
+
+\end{document}

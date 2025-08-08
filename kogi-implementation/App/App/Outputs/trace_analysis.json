@@ -1,0 +1,646 @@
+[
+  {
+    "trace_number": 1,
+    "events": [
+      "e6",
+      "e2",
+      "e3",
+      "e4",
+      "e5",
+      "e7",
+      "e8"
+    ],
+    "states": [
+      {
+        "event": "e6",
+        "qualities": {
+          "Q1": "unknown"
+        },
+        "goals": {
+          "G1": "unknown",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "unknown",
+          "T3": "unknown",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e2",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "unknown",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e3",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e4",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e5",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e7",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e8",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "true_false"
+        }
+      }
+    ]
+  },
+  {
+    "trace_number": 2,
+    "events": [
+      "e6",
+      "e2",
+      "e3",
+      "e4",
+      "e5",
+      "e7",
+      "e1"
+    ],
+    "states": [
+      {
+        "event": "e6",
+        "qualities": {
+          "Q1": "unknown"
+        },
+        "goals": {
+          "G1": "unknown",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "unknown",
+          "T3": "unknown",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e2",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "unknown",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e3",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e4",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e5",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e7",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e1",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "true_true",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_true",
+          "T4": "true_true",
+          "T5": "true_true",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "unknown"
+        }
+      }
+    ]
+  },
+  {
+    "trace_number": 3,
+    "events": [
+      "e6",
+      "e3",
+      "e2",
+      "e4",
+      "e5",
+      "e7",
+      "e1"
+    ],
+    "states": [
+      {
+        "event": "e6",
+        "qualities": {
+          "Q1": "unknown"
+        },
+        "goals": {
+          "G1": "unknown",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "unknown",
+          "T3": "unknown",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e3",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "unknown",
+          "T3": "true_false",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e2",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e4",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e5",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e7",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e1",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "true_true",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_true",
+          "T4": "true_true",
+          "T5": "true_true",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "unknown"
+        }
+      }
+    ]
+  },
+  {
+    "trace_number": 4,
+    "events": [
+      "e6",
+      "e3",
+      "e2",
+      "e4",
+      "e5",
+      "e7",
+      "e8"
+    ],
+    "states": [
+      {
+        "event": "e6",
+        "qualities": {
+          "Q1": "unknown"
+        },
+        "goals": {
+          "G1": "unknown",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "unknown",
+          "T3": "unknown",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e3",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "unknown",
+          "T3": "true_false",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e2",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "unknown",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e4",
+        "qualities": {
+          "Q1": "fulfilled"
+        },
+        "goals": {
+          "G1": "true_false",
+          "G2": "unknown",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_false",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "unknown",
+          "T6": "true_false",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e5",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "unknown",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e7",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "unknown"
+        }
+      },
+      {
+        "event": "e8",
+        "qualities": {
+          "Q1": "denied"
+        },
+        "goals": {
+          "G1": "true_true",
+          "G2": "true_false",
+          "G3": "unknown"
+        },
+        "tasks": {
+          "T1": "unknown",
+          "T2": "true_true",
+          "T3": "true_false",
+          "T4": "true_false",
+          "T5": "true_false",
+          "T6": "true_true",
+          "T7": "true_false",
+          "T8": "true_false"
+        }
+      }
+    ]
+  }
+]
