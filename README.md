@@ -34,7 +34,7 @@ git submodule update --init --recursive
 
 ### 1. Python Application
 
-## Non-interactive usage
+#### Non-interactive usage
 1. Model the goal model using PiStart download the .txt and change the extension to .json
 2. Model the process model using SAP signavio, camunda or your process model editor and download the file you can use .bpmn  or .pnl
 3. Save a CSV file with two columns: Event (Process Transition or DCR events) and Intentional Element to indicate the mapping.
@@ -176,7 +176,7 @@ Current Quality Status:
   Q1: (⊤)
 ```
 
-## Interactive Usage
+#### Interactive Usage
 
 1. Place the BPMN files, JSON goal model file, and CSV mapping file in the `input` directory.
 2. Run the Jupyter notebook:
@@ -193,6 +193,7 @@ Beta interface with a Node.js frontend and Python backend for exploring complian
 ```bash
 Instructions: coming soon
  ```
+
 
 
 
