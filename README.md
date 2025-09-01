@@ -2,14 +2,14 @@
 
 The goal of a business process is to orchestrate activities to achieve a business goal. However, most process simulation tools do not assess how activities influence the satisfaction of business goals. Kogi addresses this limitation by aligning imperative and declarative process models with goal models to evaluate compliance with high-level and non-functional requirements. Unlike existing tools, Kogi traces how process executions affect goal satisfaction in both runtime and design-time scenarios. The tool focuses on monitoring the fulfillment of organizational objectives rather than procedural correctness alone. This support shows potential to improve traceability and interpretability of compliance outcomes and enhance communication across stakeholders involved in the business process lifecycle.
 
-This repository contains three versions of the **Kogui** application, designed to evaluate **compliance** between business process models and goal models. It supports **design-time analysis**, **runtime trace evaluation**, and **what-if scenario simulation**.
+This repository contains three versions of the **Kogi** application, designed to evaluate **compliance** between business process models and goal models. It supports **design-time analysis**, **runtime trace evaluation**, and **what-if scenario simulation**.
 
-To use Kogui, you must provide **three well-formed [1] input models**:
+To use Kogi, you must provide **three well-formed [1] input models**:
 - A **process model**
 - A **goal model**
 - A **mapping** between process activities and goal model elements
 
-Kogui supports both **imperative** and **declarative** process models.
+Kogi supports both **imperative** and **declarative** process models.
 
 ## References
 
@@ -193,6 +193,7 @@ Beta interface with a Node.js frontend and Python backend for exploring complian
 ```bash
 Instructions: coming soon
  ```
+
 
 
 
