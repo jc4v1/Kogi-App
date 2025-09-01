@@ -1,0 +1,3 @@
+[submodule "Kogi-Python"]
+	path = Kogi-Python
+	url = https://github.com/jc4v1/Kogi-Python.git
